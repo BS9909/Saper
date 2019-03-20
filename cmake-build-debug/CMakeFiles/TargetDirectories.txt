@@ -1,0 +1,3 @@
+C:/Users/Bartek/CLionProjects/Saper0.2/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+C:/Users/Bartek/CLionProjects/Saper0.2/cmake-build-debug/CMakeFiles/Saper0_2.dir
+C:/Users/Bartek/CLionProjects/Saper0.2/cmake-build-debug/CMakeFiles/edit_cache.dir

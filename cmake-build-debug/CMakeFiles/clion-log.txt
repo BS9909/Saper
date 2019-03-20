@@ -1,0 +1,4 @@
+"C:\Users\Bartek\CLion 2018.3.4\bin\cmake\win\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - MinGW Makefiles" C:\Users\Bartek\CLionProjects\Saper0.2
+-- Configuring done
+-- Generating done
+-- Build files have been written to: C:/Users/Bartek/CLionProjects/Saper0.2/cmake-build-debug
