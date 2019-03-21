@@ -149,6 +149,33 @@ MSBoardTextView.cpp.s:
 	$(MAKE) -f CMakeFiles\Saper0_2.dir\build.make CMakeFiles/Saper0_2.dir/MSBoardTextView.cpp.s
 .PHONY : MSBoardTextView.cpp.s
 
+MSTextController.obj: MSTextController.cpp.obj
+
+.PHONY : MSTextController.obj
+
+# target to build an object file
+MSTextController.cpp.obj:
+	$(MAKE) -f CMakeFiles\Saper0_2.dir\build.make CMakeFiles/Saper0_2.dir/MSTextController.cpp.obj
+.PHONY : MSTextController.cpp.obj
+
+MSTextController.i: MSTextController.cpp.i
+
+.PHONY : MSTextController.i
+
+# target to preprocess a source file
+MSTextController.cpp.i:
+	$(MAKE) -f CMakeFiles\Saper0_2.dir\build.make CMakeFiles/Saper0_2.dir/MSTextController.cpp.i
+.PHONY : MSTextController.cpp.i
+
+MSTextController.s: MSTextController.cpp.s
+
+.PHONY : MSTextController.s
+
+# target to generate assembly for a file
+MSTextController.cpp.s:
+	$(MAKE) -f CMakeFiles\Saper0_2.dir\build.make CMakeFiles/Saper0_2.dir/MSTextController.cpp.s
+.PHONY : MSTextController.cpp.s
+
 Minesweeperboard.obj: Minesweeperboard.cpp.obj
 
 .PHONY : Minesweeperboard.obj
@@ -215,6 +242,9 @@ help:
 	@echo ... MSBoardTextView.obj
 	@echo ... MSBoardTextView.i
 	@echo ... MSBoardTextView.s
+	@echo ... MSTextController.obj
+	@echo ... MSTextController.i
+	@echo ... MSTextController.s
 	@echo ... Minesweeperboard.obj
 	@echo ... Minesweeperboard.i
 	@echo ... Minesweeperboard.s

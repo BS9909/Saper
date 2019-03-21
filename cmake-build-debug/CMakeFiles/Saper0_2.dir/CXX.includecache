@@ -6,19 +6,19 @@
 
 #IncludeRegexTransform: 
 
-C:/Users/Bartek/CLionProjects/Saper0.2/Minesweeperboard.cpp
+C:/Users/Bartek/CLionProjects/Saper0.2/MSBoardTextView.h
 Minesweeperboard.h
 C:/Users/Bartek/CLionProjects/Saper0.2/Minesweeperboard.h
-cstdlib
--
-ctime
--
-string
--
-cmath
--
-iostream
--
+
+C:/Users/Bartek/CLionProjects/Saper0.2/MSTextController.cpp
+MSTextController.h
+C:/Users/Bartek/CLionProjects/Saper0.2/MSTextController.h
+
+C:/Users/Bartek/CLionProjects/Saper0.2/MSTextController.h
+MSBoardTextView.h
+C:/Users/Bartek/CLionProjects/Saper0.2/MSBoardTextView.h
+Minesweeperboard.h
+C:/Users/Bartek/CLionProjects/Saper0.2/Minesweeperboard.h
 
 C:/Users/Bartek/CLionProjects/Saper0.2/Minesweeperboard.h
 

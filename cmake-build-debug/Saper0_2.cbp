@@ -86,6 +86,12 @@
 		<Unit filename="C:/Users/Bartek/CLionProjects/Saper0.2/MSBoardTextView.h">
 			<Option target="Saper0_2"/>
 		</Unit>
+		<Unit filename="C:/Users/Bartek/CLionProjects/Saper0.2/MSTextController.cpp">
+			<Option target="Saper0_2"/>
+		</Unit>
+		<Unit filename="C:/Users/Bartek/CLionProjects/Saper0.2/MSTextController.h">
+			<Option target="Saper0_2"/>
+		</Unit>
 		<Unit filename="C:/Users/Bartek/CLionProjects/Saper0.2/Minesweeperboard.cpp">
 			<Option target="Saper0_2"/>
 		</Unit>

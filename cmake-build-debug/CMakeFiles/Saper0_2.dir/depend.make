@@ -5,6 +5,11 @@ CMakeFiles/Saper0_2.dir/MSBoardTextView.cpp.obj: ../MSBoardTextView.cpp
 CMakeFiles/Saper0_2.dir/MSBoardTextView.cpp.obj: ../MSBoardTextView.h
 CMakeFiles/Saper0_2.dir/MSBoardTextView.cpp.obj: ../Minesweeperboard.h
 
+CMakeFiles/Saper0_2.dir/MSTextController.cpp.obj: ../MSBoardTextView.h
+CMakeFiles/Saper0_2.dir/MSTextController.cpp.obj: ../MSTextController.cpp
+CMakeFiles/Saper0_2.dir/MSTextController.cpp.obj: ../MSTextController.h
+CMakeFiles/Saper0_2.dir/MSTextController.cpp.obj: ../Minesweeperboard.h
+
 CMakeFiles/Saper0_2.dir/Minesweeperboard.cpp.obj: ../Minesweeperboard.cpp
 CMakeFiles/Saper0_2.dir/Minesweeperboard.cpp.obj: ../Minesweeperboard.h
 

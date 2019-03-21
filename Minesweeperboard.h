@@ -21,9 +21,14 @@ class Minesweeperboard {
     int high;
     bool hasMine(int row, int column)const;
     GameState game_status;
+    bool firstMove;
+public:
+    bool isFirstMove() const;
+
 public:
     Minesweeperboard(int width, int high, GameMode mode);
     void debug_display() const;
+    void newMine(int row, int column) ;
     int getBoardWidth()const ;
     int getBoardHeight()const ;
     int getMineCount() const;
