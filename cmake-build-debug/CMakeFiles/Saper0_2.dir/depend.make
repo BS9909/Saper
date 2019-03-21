@@ -14,6 +14,7 @@ CMakeFiles/Saper0_2.dir/Minesweeperboard.cpp.obj: ../Minesweeperboard.cpp
 CMakeFiles/Saper0_2.dir/Minesweeperboard.cpp.obj: ../Minesweeperboard.h
 
 CMakeFiles/Saper0_2.dir/main.cpp.obj: ../MSBoardTextView.h
+CMakeFiles/Saper0_2.dir/main.cpp.obj: ../MSTextController.h
 CMakeFiles/Saper0_2.dir/main.cpp.obj: ../Minesweeperboard.h
 CMakeFiles/Saper0_2.dir/main.cpp.obj: ../main.cpp
 

@@ -12,5 +12,4 @@ void MSBoardTextView::display() const {
     }
 }
 MSBoardTextView::MSBoardTextView(Minesweeperboard &b): board(b){
-    board = b;
 }
