@@ -21,6 +21,10 @@ class Minesweeperboard {
     int high;
     bool hasMine(int row, int column)const;
     GameState game_status;
+public:
+    GameState getGame_status() const;
+
+private:
     bool firstMove;
 public:
     bool isFirstMove() const;

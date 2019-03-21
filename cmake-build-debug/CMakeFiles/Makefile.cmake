@@ -36,6 +36,12 @@ set(CMAKE_MAKEFILE_DEPENDS
   "CMakeFiles/3.13.2/CMakeCXXCompiler.cmake"
   "CMakeFiles/3.13.2/CMakeRCCompiler.cmake"
   "CMakeFiles/3.13.2/CMakeSystem.cmake"
+  "C:/Users/Bartek/SFML-2.5.1/lib/cmake/SFML/SFMLConfig.cmake"
+  "C:/Users/Bartek/SFML-2.5.1/lib/cmake/SFML/SFMLConfigDependencies.cmake"
+  "C:/Users/Bartek/SFML-2.5.1/lib/cmake/SFML/SFMLConfigVersion.cmake"
+  "C:/Users/Bartek/SFML-2.5.1/lib/cmake/SFML/SFMLSharedTargets-debug.cmake"
+  "C:/Users/Bartek/SFML-2.5.1/lib/cmake/SFML/SFMLSharedTargets-release.cmake"
+  "C:/Users/Bartek/SFML-2.5.1/lib/cmake/SFML/SFMLSharedTargets.cmake"
   )
 
 # The corresponding makefile is:

@@ -21,10 +21,12 @@ void MSTextController::play() {
         std::cout<<"Set column position: ";
         std::cin>>column_position;
         if(choice==1) board.toggleFlag(row_position-1,column_position-1);
-        else if(choice==0) board.revealField(row_position-1, column_position-1);
+        else if(choice==0) {
+            board.revealField(row_position-1, column_position-1);
+        }
         std::cout<<std::endl;
-        view.display();
         status_of_game = board.getGameState();
+        view.display();
     }
     if (status_of_game==FINISHED_LOSS) std::cout<<"Ups, you lose";
     else if (status_of_game==FINISHED_WIN) std::cout<<"Congratulations! You win";

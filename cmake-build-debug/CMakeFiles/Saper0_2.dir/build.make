@@ -57,6 +57,7 @@ include CMakeFiles/Saper0_2.dir/progress.make
 include CMakeFiles/Saper0_2.dir/flags.make
 
 CMakeFiles/Saper0_2.dir/main.cpp.obj: CMakeFiles/Saper0_2.dir/flags.make
+CMakeFiles/Saper0_2.dir/main.cpp.obj: CMakeFiles/Saper0_2.dir/includes_CXX.rsp
 CMakeFiles/Saper0_2.dir/main.cpp.obj: ../main.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Bartek\CLionProjects\Saper0.2\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Saper0_2.dir/main.cpp.obj"
 	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Saper0_2.dir\main.cpp.obj -c C:\Users\Bartek\CLionProjects\Saper0.2\main.cpp
@@ -70,6 +71,7 @@ CMakeFiles/Saper0_2.dir/main.cpp.s: cmake_force
 	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Bartek\CLionProjects\Saper0.2\main.cpp -o CMakeFiles\Saper0_2.dir\main.cpp.s
 
 CMakeFiles/Saper0_2.dir/Minesweeperboard.cpp.obj: CMakeFiles/Saper0_2.dir/flags.make
+CMakeFiles/Saper0_2.dir/Minesweeperboard.cpp.obj: CMakeFiles/Saper0_2.dir/includes_CXX.rsp
 CMakeFiles/Saper0_2.dir/Minesweeperboard.cpp.obj: ../Minesweeperboard.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Bartek\CLionProjects\Saper0.2\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Saper0_2.dir/Minesweeperboard.cpp.obj"
 	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Saper0_2.dir\Minesweeperboard.cpp.obj -c C:\Users\Bartek\CLionProjects\Saper0.2\Minesweeperboard.cpp
@@ -83,6 +85,7 @@ CMakeFiles/Saper0_2.dir/Minesweeperboard.cpp.s: cmake_force
 	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Bartek\CLionProjects\Saper0.2\Minesweeperboard.cpp -o CMakeFiles\Saper0_2.dir\Minesweeperboard.cpp.s
 
 CMakeFiles/Saper0_2.dir/MSBoardTextView.cpp.obj: CMakeFiles/Saper0_2.dir/flags.make
+CMakeFiles/Saper0_2.dir/MSBoardTextView.cpp.obj: CMakeFiles/Saper0_2.dir/includes_CXX.rsp
 CMakeFiles/Saper0_2.dir/MSBoardTextView.cpp.obj: ../MSBoardTextView.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Bartek\CLionProjects\Saper0.2\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Saper0_2.dir/MSBoardTextView.cpp.obj"
 	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Saper0_2.dir\MSBoardTextView.cpp.obj -c C:\Users\Bartek\CLionProjects\Saper0.2\MSBoardTextView.cpp
@@ -96,6 +99,7 @@ CMakeFiles/Saper0_2.dir/MSBoardTextView.cpp.s: cmake_force
 	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Bartek\CLionProjects\Saper0.2\MSBoardTextView.cpp -o CMakeFiles\Saper0_2.dir\MSBoardTextView.cpp.s
 
 CMakeFiles/Saper0_2.dir/MSTextController.cpp.obj: CMakeFiles/Saper0_2.dir/flags.make
+CMakeFiles/Saper0_2.dir/MSTextController.cpp.obj: CMakeFiles/Saper0_2.dir/includes_CXX.rsp
 CMakeFiles/Saper0_2.dir/MSTextController.cpp.obj: ../MSTextController.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Bartek\CLionProjects\Saper0.2\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/Saper0_2.dir/MSTextController.cpp.obj"
 	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Saper0_2.dir\MSTextController.cpp.obj -c C:\Users\Bartek\CLionProjects\Saper0.2\MSTextController.cpp
@@ -123,6 +127,9 @@ Saper0_2.exe: CMakeFiles/Saper0_2.dir/Minesweeperboard.cpp.obj
 Saper0_2.exe: CMakeFiles/Saper0_2.dir/MSBoardTextView.cpp.obj
 Saper0_2.exe: CMakeFiles/Saper0_2.dir/MSTextController.cpp.obj
 Saper0_2.exe: CMakeFiles/Saper0_2.dir/build.make
+Saper0_2.exe: C:/Users/Bartek/SFML-2.5.1/lib/libsfml-graphics-d.a
+Saper0_2.exe: C:/Users/Bartek/SFML-2.5.1/lib/libsfml-window-d.a
+Saper0_2.exe: C:/Users/Bartek/SFML-2.5.1/lib/libsfml-system-d.a
 Saper0_2.exe: CMakeFiles/Saper0_2.dir/linklibs.rsp
 Saper0_2.exe: CMakeFiles/Saper0_2.dir/objects1.rsp
 Saper0_2.exe: CMakeFiles/Saper0_2.dir/link.txt

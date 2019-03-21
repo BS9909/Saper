@@ -99,13 +99,13 @@ void Minesweeperboard::revealField(int row, int column) {
         board[row][column].isRevealed=true;
         firstMove = false;
     }
-    else if(!board[row][column].isRevealed && board[row][column].hasMine){
+    if(!board[row][column].isRevealed && board[row][column].hasMine){
         if(firstMove== true){
             board[row][column].hasMine=false;
             newMine(row,column);
             board[row][column].isRevealed=true;
             firstMove = false;
-        }else board[row][column].isRevealed= true;
+        }else if(!board[row][column].isRevealed && board[row][column].hasMine) {board[row][column].isRevealed = true;getGame_status();}
     }
 }
 bool Minesweeperboard::hasFlag(int row, int column) const {
@@ -155,5 +155,8 @@ void Minesweeperboard::newMine(int row, int column) {
         }
     }while (board[row][column].isRevealed!=board[newRow][newColumn].hasMine);
     board[newRow][newColumn].hasMine = true;
+}
 
+GameState Minesweeperboard::getGame_status() const {
+    return game_status;
 }
