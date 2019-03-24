@@ -8,13 +8,12 @@
 
 
 class MSTextController {
-    MSBoardTextView view;
+    MSBoardTextView &view;
     Minesweeperboard &board;
     static GameState game_status;
 public:
-    MSTextController(MSBoardTextView v, Minesweeperboard &b);
-    void play();
+    MSTextController(MSBoardTextView &v, Minesweeperboard &b);
+    void play() const;
 };
-
 
 #endif //SAPER0_2_MSTEXTCONTROLLER_H

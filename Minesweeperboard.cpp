@@ -4,6 +4,7 @@
 
 
 #include "Minesweeperboard.h"
+#include "MSTextController.h"
 #include <cstdlib>
 #include <ctime>
 #include <string>
@@ -95,17 +96,17 @@ bool Minesweeperboard::isRevealed(int row, int column) const {
     return false;
 }
 void Minesweeperboard::revealField(int row, int column) {
-    if(!board[row][column].hasMine && !board[row][column].isRevealed){
-        board[row][column].isRevealed=true;
+    if(!board[row][column].isRevealed && !board[row][column].hasMine){
+        board[row][column].isRevealed = true;
         firstMove = false;
     }
-    if(!board[row][column].isRevealed && board[row][column].hasMine){
-        if(firstMove== true){
-            board[row][column].hasMine=false;
-            newMine(row,column);
-            board[row][column].isRevealed=true;
+    else if(board[row][column].hasMine && !board[row][column].isRevealed) {
+        if (firstMove) {
+            board[row][column].hasMine = false;
+            newMine(row, column);
+            board[row][column].isRevealed = true;
             firstMove = false;
-        }else if(!board[row][column].isRevealed && board[row][column].hasMine) {board[row][column].isRevealed = true;getGame_status();}
+        } else board[row][column].isRevealed = true;
     }
 }
 bool Minesweeperboard::hasFlag(int row, int column) const {
@@ -160,3 +161,4 @@ void Minesweeperboard::newMine(int row, int column) {
 GameState Minesweeperboard::getGame_status() const {
     return game_status;
 }
+//board[][].isTRevealed==true
