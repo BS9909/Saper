@@ -159,6 +159,3 @@ void Minesweeperboard::newMine(int row, int column) {
     board[row][column].hasMine = false;
     board[newRow][newColumn].hasMine = true;
 }
-GameState Minesweeperboard::getGame_status() const {
-    return game_status;
-}
