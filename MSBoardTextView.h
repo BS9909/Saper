@@ -11,7 +11,7 @@ class MSBoardTextView {
     Minesweeperboard & board;
 public:
     MSBoardTextView(Minesweeperboard & b);
-    void display(int row, int column) const;
+    void display() const;
 };
 
 

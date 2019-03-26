@@ -6,7 +6,7 @@
 
 
 int main() {
-    //int row_x=2, column_y=1;
+    srand(time(NULL));
     Minesweeperboard board(9,7,DEBUG);
     MSBoardTextView view(board);
     MSTextController control(view, board);

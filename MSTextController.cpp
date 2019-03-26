@@ -10,56 +10,23 @@ MSTextController::MSTextController(MSBoardTextView &v, Minesweeperboard &b): vie
 }
 
 void MSTextController::play() const {
-    int row_position=0, column_position=0;
-    view.display(row_position, column_position);
-    char k;
-    do {
-        k = getch();
-        if (k == 'f') {
-            board.toggleFlag(row_position, column_position);
-            system("CLS");
-            view.display(row_position,column_position);
+    int row_position = 0, column_position = 0;
+    bool choice;
+    while (board.getGameState() == RUNNING) {
+        std::cout << "Flag=1-Reveal=0: ";
+        std::cin >> choice;
+        std::cout << "Set row postion: ";
+        std::cin >> row_position;
+        std::cout << "Set column position: ";
+        std::cin >> column_position;
+        if (choice == 1) board.toggleFlag(row_position - 1, column_position - 1);
+        else if (choice == 0) board.revealField(row_position - 1, column_position - 1);
+        else if (choice == 0) {
+            board.revealField(row_position - 1, column_position - 1);
         }
-        else if (k == 'o') {
-            board.revealField(row_position, column_position);
-            system("CLS");
-            view.display(row_position,column_position);
-        }
-        else {
-            while (kbhit()) {
-                switch (k) {
-                    case 0:
-                        k = getch();
-                        switch (k) {
-                            case 72:
-                                row_position--;
-                                if (row_position == 0) row_position = board.getBoardHeight() - 1;
-                                system("CLS");
-                                view.display(row_position,column_position);
-                                break;
-                            case 80:
-                                row_position++;
-                                if (row_position == board.getBoardHeight() - 1) row_position = 0;
-                                system("CLS");
-                                view.display(row_position,column_position);
-                                break;
-                            case 75:
-                                column_position--;
-                                if (column_position == 0) row_position = board.getBoardWidth() - 1;
-                                system("CLS");
-                                view.display(row_position,column_position);
-                                break;
-                            case 77:
-                                column_position++;
-                                if (row_position == board.getBoardWidth() - 1) row_position = 0;
-                                system("CLS");
-                                view.display(row_position,column_position);
-                                break;
-                        }
-                }
-            }
-        }
-    }while (board.getGameState()==RUNNING);
-    if(board.getGameState()==FINISHED_LOSS) std::cout<<"LOSS";
-    else if(board.getGameState()==FINISHED_WIN) std::cout<<"Win";
+        std::cout << std::endl;
+        view.display();
+    }
+    if (board.getGameState() == FINISHED_LOSS) std::cout << "Ups, you lose";
+    else if (board.getGameState() == FINISHED_WIN) std::cout << "Congratulations! You win";
 }
