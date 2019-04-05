@@ -13,7 +13,6 @@
 
 
 Minesweeperboard::Minesweeperboard(int width, int high, GameMode mode) {
-    srand(time(NULL));
     game_status = RUNNING;
     firstMove = true;
     this ->width = width;
@@ -107,19 +106,25 @@ void Minesweeperboard::revealField(int row, int column) {
     }else if(board[row][column].hasMine && !firstMove){
         board[row][column].isRevealed=true;
         game_status = FINISHED_LOSS;
+        firstMove = false;
     }else if(!board[row][column].hasMine && !firstMove){
         board[row][column].isRevealed = true;
+        firstMove = false;
+        game_status = RUNNING;
+    }else if(!board[row][column].hasMine && firstMove) {
+        board[row][column].isRevealed = true;
+        firstMove = false;
         game_status = RUNNING;
     }else{
-        for (int i = 0; i < getBoardHeight(); ++i) {
-            for (int j = 0; j < getBoardWidth(); ++j) {
-                if(board[i][j].isRevealed && !board[i][j].hasMine) game_status = FINISHED_WIN;
+            for (int i = 0; i < getBoardHeight(); ++i) {
+                for (int j = 0; j < getBoardWidth(); ++j) {
+                    firstMove = false;
+                    board[row][column].isRevealed = true;
+                    if(board[i][j].isRevealed && !board[i][j].hasMine) game_status = FINISHED_WIN;
+                }
             }
         }
     }
-
-
-}
 bool Minesweeperboard::hasFlag(int row, int column) const {
     if(!(row>=0 && row < high && column>=0 && column < width)) return 0;
     if(board[row][column].hasFlag) return true;

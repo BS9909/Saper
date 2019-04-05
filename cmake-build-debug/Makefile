@@ -149,6 +149,60 @@ MSBoardTextView.cpp.s:
 	$(MAKE) -f CMakeFiles\Saper0_2.dir\build.make CMakeFiles/Saper0_2.dir/MSBoardTextView.cpp.s
 .PHONY : MSBoardTextView.cpp.s
 
+MSGui.obj: MSGui.cpp.obj
+
+.PHONY : MSGui.obj
+
+# target to build an object file
+MSGui.cpp.obj:
+	$(MAKE) -f CMakeFiles\Saper0_2.dir\build.make CMakeFiles/Saper0_2.dir/MSGui.cpp.obj
+.PHONY : MSGui.cpp.obj
+
+MSGui.i: MSGui.cpp.i
+
+.PHONY : MSGui.i
+
+# target to preprocess a source file
+MSGui.cpp.i:
+	$(MAKE) -f CMakeFiles\Saper0_2.dir\build.make CMakeFiles/Saper0_2.dir/MSGui.cpp.i
+.PHONY : MSGui.cpp.i
+
+MSGui.s: MSGui.cpp.s
+
+.PHONY : MSGui.s
+
+# target to generate assembly for a file
+MSGui.cpp.s:
+	$(MAKE) -f CMakeFiles\Saper0_2.dir\build.make CMakeFiles/Saper0_2.dir/MSGui.cpp.s
+.PHONY : MSGui.cpp.s
+
+MSSFMLview.obj: MSSFMLview.cpp.obj
+
+.PHONY : MSSFMLview.obj
+
+# target to build an object file
+MSSFMLview.cpp.obj:
+	$(MAKE) -f CMakeFiles\Saper0_2.dir\build.make CMakeFiles/Saper0_2.dir/MSSFMLview.cpp.obj
+.PHONY : MSSFMLview.cpp.obj
+
+MSSFMLview.i: MSSFMLview.cpp.i
+
+.PHONY : MSSFMLview.i
+
+# target to preprocess a source file
+MSSFMLview.cpp.i:
+	$(MAKE) -f CMakeFiles\Saper0_2.dir\build.make CMakeFiles/Saper0_2.dir/MSSFMLview.cpp.i
+.PHONY : MSSFMLview.cpp.i
+
+MSSFMLview.s: MSSFMLview.cpp.s
+
+.PHONY : MSSFMLview.s
+
+# target to generate assembly for a file
+MSSFMLview.cpp.s:
+	$(MAKE) -f CMakeFiles\Saper0_2.dir\build.make CMakeFiles/Saper0_2.dir/MSSFMLview.cpp.s
+.PHONY : MSSFMLview.cpp.s
+
 MSTextController.obj: MSTextController.cpp.obj
 
 .PHONY : MSTextController.obj
@@ -242,6 +296,12 @@ help:
 	@echo ... MSBoardTextView.obj
 	@echo ... MSBoardTextView.i
 	@echo ... MSBoardTextView.s
+	@echo ... MSGui.obj
+	@echo ... MSGui.i
+	@echo ... MSGui.s
+	@echo ... MSSFMLview.obj
+	@echo ... MSSFMLview.i
+	@echo ... MSSFMLview.s
 	@echo ... MSTextController.obj
 	@echo ... MSTextController.i
 	@echo ... MSTextController.s
