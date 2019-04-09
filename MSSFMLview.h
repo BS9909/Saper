@@ -15,6 +15,8 @@ class MSSFMLview {
     Minesweeperboard &msb;
 public:
     MSSFMLview(int squarsize,Minesweeperboard &msb,int square_position_x,int square_position_y);
+    std::vector<sf::CircleShape> rectangleBox;
+    //sf::RectangleShape rectangleBox[100][100];
     void draw(sf::RenderWindow &win);
 };
 

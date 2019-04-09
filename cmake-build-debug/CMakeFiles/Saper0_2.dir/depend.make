@@ -158,6 +158,8 @@ CMakeFiles/Saper0_2.dir/MSGui.cpp.obj: C:/Users/Bartek/SFML-2.5.1/include/SFML/W
 CMakeFiles/Saper0_2.dir/MSGui.cpp.obj: C:/Users/Bartek/SFML-2.5.1/include/SFML/Window/WindowHandle.hpp
 CMakeFiles/Saper0_2.dir/MSGui.cpp.obj: C:/Users/Bartek/SFML-2.5.1/include/SFML/Window/WindowStyle.hpp
 
+CMakeFiles/Saper0_2.dir/MSMouseButton.cpp.obj: ../MSMouseButton.cpp
+
 CMakeFiles/Saper0_2.dir/MSSFMLview.cpp.obj: ../MSSFMLview.cpp
 CMakeFiles/Saper0_2.dir/MSSFMLview.cpp.obj: ../MSSFMLview.h
 CMakeFiles/Saper0_2.dir/MSSFMLview.cpp.obj: ../Minesweeperboard.h
@@ -322,6 +324,7 @@ CMakeFiles/Saper0_2.dir/Minesweeperboard.cpp.obj: ../Minesweeperboard.h
 
 CMakeFiles/Saper0_2.dir/main.cpp.obj: ../MSBoardTextView.h
 CMakeFiles/Saper0_2.dir/main.cpp.obj: ../MSGui.h
+CMakeFiles/Saper0_2.dir/main.cpp.obj: ../MSMouseButton.h
 CMakeFiles/Saper0_2.dir/main.cpp.obj: ../MSSFMLview.h
 CMakeFiles/Saper0_2.dir/main.cpp.obj: ../MSTextController.h
 CMakeFiles/Saper0_2.dir/main.cpp.obj: ../Minesweeperboard.h

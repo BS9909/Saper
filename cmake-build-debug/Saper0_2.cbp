@@ -94,6 +94,12 @@
 		<Unit filename="C:/Users/Bartek/CLionProjects/Saper0.2/MSGui.h">
 			<Option target="Saper0_2"/>
 		</Unit>
+		<Unit filename="C:/Users/Bartek/CLionProjects/Saper0.2/MSMouseButton.cpp">
+			<Option target="Saper0_2"/>
+		</Unit>
+		<Unit filename="C:/Users/Bartek/CLionProjects/Saper0.2/MSMouseButton.h">
+			<Option target="Saper0_2"/>
+		</Unit>
 		<Unit filename="C:/Users/Bartek/CLionProjects/Saper0.2/MSSFMLview.cpp">
 			<Option target="Saper0_2"/>
 		</Unit>

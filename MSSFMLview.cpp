@@ -4,6 +4,7 @@
 
 #include "MSSFMLview.h"
 #include "Minesweeperboard.h"
+#include <vector>
 #include <cmath>
 #include <cctype>
 
@@ -23,9 +24,10 @@ void MSSFMLview::draw(sf::RenderWindow &win) {
     font.loadFromFile("arial.ttf");
     sf::Text text;
     //Ustawiam parametry czcionki:
-    text.setCharacterSize(50);
-    text.setOutlineThickness(-2);
-    text.setOutlineColor(sf::Color::Cyan);
+    text.setCharacterSize(squaresize);
+    text.setFillColor(sf::Color::Blue);
+    text.setOutlineThickness(1);
+    text.setOutlineColor(sf::Color::Red);
     text.setFont(font);
     //Dwie pętle for które odpowiadają za narysowanie siatki
     //UWAGA! Parametry j,i są w odwróconej kolejności dla getFieledinfo i dla rysowania siatki
@@ -36,6 +38,8 @@ void MSSFMLview::draw(sf::RenderWindow &win) {
         for (int i = 0; i < msb.getBoardWidth(); ++i) {
             //Tworzenie kwadratów i nadawanie im początkowych wartość
             square.setPosition(square_position_y + i*(squaresize*2)/pow(2, 0.5), square_position_x + j*(squaresize*2)/pow(2, 0.5));
+            rectangleBox.push_back(square);
+            //rectangleBox[i][j] = square;
             square.setFillColor(sf::Color::Black);
             square.setOutlineThickness(-1);
             square.setOutlineColor(sf::Color::Red);;
@@ -60,7 +64,7 @@ void MSSFMLview::draw(sf::RenderWindow &win) {
                 switch (msb.getFieldInfo(j,i)){
                     case '1': text.setString("1");
                         text.setPosition(square_position_y-10+i*sqrt(2)*squaresize,square_position_x+j*sqrt(2)*squaresize+0.8*squaresize);
-                            win.draw(text);
+                        win.draw(text);
                         break;
                     case '2': text.setString("2");
                         text.setPosition(square_position_y-10+i*sqrt(2)*squaresize,square_position_x+j*sqrt(2)*squaresize+0.8*squaresize);
@@ -93,7 +97,6 @@ void MSSFMLview::draw(sf::RenderWindow &win) {
 
                 }
                 }
-
             }
         }
     }

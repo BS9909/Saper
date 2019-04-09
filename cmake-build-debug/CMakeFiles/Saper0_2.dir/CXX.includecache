@@ -16,6 +16,16 @@ C:/Users/Bartek/CLionProjects/Saper0.2/Minesweeperboard.h
 SFML/Graphics.hpp
 -
 
+C:/Users/Bartek/CLionProjects/Saper0.2/MSMouseButton.h
+MSSFMLview.h
+C:/Users/Bartek/CLionProjects/Saper0.2/MSSFMLview.h
+MSTextController.h
+C:/Users/Bartek/CLionProjects/Saper0.2/MSTextController.h
+Minesweeperboard.h
+C:/Users/Bartek/CLionProjects/Saper0.2/Minesweeperboard.h
+SFML/Graphics.hpp
+-
+
 C:/Users/Bartek/CLionProjects/Saper0.2/MSSFMLview.h
 SFML/Graphics.hpp
 -
@@ -43,6 +53,8 @@ MSGui.h
 C:/Users/Bartek/CLionProjects/Saper0.2/MSGui.h
 MSSFMLview.h
 C:/Users/Bartek/CLionProjects/Saper0.2/MSSFMLview.h
+MSMouseButton.h
+C:/Users/Bartek/CLionProjects/Saper0.2/MSMouseButton.h
 SFML/Graphics.hpp
 -
 cmath

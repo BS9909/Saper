@@ -176,6 +176,33 @@ MSGui.cpp.s:
 	$(MAKE) -f CMakeFiles\Saper0_2.dir\build.make CMakeFiles/Saper0_2.dir/MSGui.cpp.s
 .PHONY : MSGui.cpp.s
 
+MSMouseButton.obj: MSMouseButton.cpp.obj
+
+.PHONY : MSMouseButton.obj
+
+# target to build an object file
+MSMouseButton.cpp.obj:
+	$(MAKE) -f CMakeFiles\Saper0_2.dir\build.make CMakeFiles/Saper0_2.dir/MSMouseButton.cpp.obj
+.PHONY : MSMouseButton.cpp.obj
+
+MSMouseButton.i: MSMouseButton.cpp.i
+
+.PHONY : MSMouseButton.i
+
+# target to preprocess a source file
+MSMouseButton.cpp.i:
+	$(MAKE) -f CMakeFiles\Saper0_2.dir\build.make CMakeFiles/Saper0_2.dir/MSMouseButton.cpp.i
+.PHONY : MSMouseButton.cpp.i
+
+MSMouseButton.s: MSMouseButton.cpp.s
+
+.PHONY : MSMouseButton.s
+
+# target to generate assembly for a file
+MSMouseButton.cpp.s:
+	$(MAKE) -f CMakeFiles\Saper0_2.dir\build.make CMakeFiles/Saper0_2.dir/MSMouseButton.cpp.s
+.PHONY : MSMouseButton.cpp.s
+
 MSSFMLview.obj: MSSFMLview.cpp.obj
 
 .PHONY : MSSFMLview.obj
@@ -299,6 +326,9 @@ help:
 	@echo ... MSGui.obj
 	@echo ... MSGui.i
 	@echo ... MSGui.s
+	@echo ... MSMouseButton.obj
+	@echo ... MSMouseButton.i
+	@echo ... MSMouseButton.s
 	@echo ... MSSFMLview.obj
 	@echo ... MSSFMLview.i
 	@echo ... MSSFMLview.s
