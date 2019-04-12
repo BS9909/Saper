@@ -6,23 +6,21 @@
 
 #IncludeRegexTransform: 
 
-C:/Users/Bartek/CLionProjects/Saper0.2/MSBoardTextView.h
-Minesweeperboard.h
-C:/Users/Bartek/CLionProjects/Saper0.2/Minesweeperboard.h
+C:/Users/Bartek/CLionProjects/Saper0.2/GameManager.h
+IntroController.h
+C:/Users/Bartek/CLionProjects/Saper0.2/IntroController.h
+MinesweeperController.h
+C:/Users/Bartek/CLionProjects/Saper0.2/MinesweeperController.h
+ScoreController.h
+C:/Users/Bartek/CLionProjects/Saper0.2/ScoreController.h
 
-C:/Users/Bartek/CLionProjects/Saper0.2/MSGui.h
-Minesweeperboard.h
-C:/Users/Bartek/CLionProjects/Saper0.2/Minesweeperboard.h
+C:/Users/Bartek/CLionProjects/Saper0.2/IntroController.h
 SFML/Graphics.hpp
 -
+IntroView.h
+C:/Users/Bartek/CLionProjects/Saper0.2/IntroView.h
 
-C:/Users/Bartek/CLionProjects/Saper0.2/MSMouseButton.h
-MSSFMLview.h
-C:/Users/Bartek/CLionProjects/Saper0.2/MSSFMLview.h
-MSTextController.h
-C:/Users/Bartek/CLionProjects/Saper0.2/MSTextController.h
-Minesweeperboard.h
-C:/Users/Bartek/CLionProjects/Saper0.2/Minesweeperboard.h
+C:/Users/Bartek/CLionProjects/Saper0.2/IntroView.h
 SFML/Graphics.hpp
 -
 
@@ -32,33 +30,55 @@ SFML/Graphics.hpp
 Minesweeperboard.h
 C:/Users/Bartek/CLionProjects/Saper0.2/Minesweeperboard.h
 
-C:/Users/Bartek/CLionProjects/Saper0.2/MSTextController.h
-MSBoardTextView.h
-C:/Users/Bartek/CLionProjects/Saper0.2/MSBoardTextView.h
-Minesweeperboard.h
-C:/Users/Bartek/CLionProjects/Saper0.2/Minesweeperboard.h
+C:/Users/Bartek/CLionProjects/Saper0.2/MinesweeperController.h
+SFML/Graphics.hpp
+-
+MinesweeperView.h
+C:/Users/Bartek/CLionProjects/Saper0.2/MinesweeperView.h
+
+C:/Users/Bartek/CLionProjects/Saper0.2/MinesweeperView.h
+SFML/Graphics.hpp
+-
 
 C:/Users/Bartek/CLionProjects/Saper0.2/Minesweeperboard.h
+IntroController.h
+C:/Users/Bartek/CLionProjects/Saper0.2/IntroController.h
+
+C:/Users/Bartek/CLionProjects/Saper0.2/ScoreController.h
+SFML/Graphics.hpp
+-
+ScoreView.h
+C:/Users/Bartek/CLionProjects/Saper0.2/ScoreView.h
+
+C:/Users/Bartek/CLionProjects/Saper0.2/ScoreView.h
+SFML/Graphics.hpp
+-
 
 C:/Users/Bartek/CLionProjects/Saper0.2/main.cpp
-iostream
--
-Minesweeperboard.h
-C:/Users/Bartek/CLionProjects/Saper0.2/Minesweeperboard.h
-MSBoardTextView.h
-C:/Users/Bartek/CLionProjects/Saper0.2/MSBoardTextView.h
-MSTextController.h
-C:/Users/Bartek/CLionProjects/Saper0.2/MSTextController.h
-MSGui.h
-C:/Users/Bartek/CLionProjects/Saper0.2/MSGui.h
-MSSFMLview.h
-C:/Users/Bartek/CLionProjects/Saper0.2/MSSFMLview.h
-MSMouseButton.h
-C:/Users/Bartek/CLionProjects/Saper0.2/MSMouseButton.h
 SFML/Graphics.hpp
 -
+ScoreController.h
+C:/Users/Bartek/CLionProjects/Saper0.2/ScoreController.h
+ScoreView.h
+C:/Users/Bartek/CLionProjects/Saper0.2/ScoreView.h
+IntroController.h
+C:/Users/Bartek/CLionProjects/Saper0.2/IntroController.h
+IntroView.h
+C:/Users/Bartek/CLionProjects/Saper0.2/IntroView.h
+iostream
+C:/Users/Bartek/CLionProjects/Saper0.2/iostream
+MinesweeperController.h
+C:/Users/Bartek/CLionProjects/Saper0.2/MinesweeperController.h
+MinesweeperView.h
+C:/Users/Bartek/CLionProjects/Saper0.2/MinesweeperView.h
+Minesweeperboard.h
+C:/Users/Bartek/CLionProjects/Saper0.2/Minesweeperboard.h
+MSSFMLview.h
+C:/Users/Bartek/CLionProjects/Saper0.2/MSSFMLview.h
 cmath
 -
+GameManager.h
+C:/Users/Bartek/CLionProjects/Saper0.2/GameManager.h
 
 C:/Users/Bartek/SFML-2.5.1/include/SFML/Config.hpp
 TargetConditionals.h

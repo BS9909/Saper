@@ -4,6 +4,8 @@
 
 #ifndef SAPER0_2_MINESWEEPERBOARD_H
 #define SAPER0_2_MINESWEEPERBOARD_H
+#include "IntroController.h"
+
 
 enum GameMode  { DEBUG, EASY, NORMAL, HARD };
 enum GameState { RUNNING, FINISHED_WIN, FINISHED_LOSS };
@@ -21,7 +23,6 @@ class Minesweeperboard {
     int high;
     bool hasMine(int row, int column)const;
     GameState game_status;
-
 private:
     bool firstMove;
 public:

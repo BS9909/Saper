@@ -112,24 +112,10 @@ CMakeFiles/Saper0_2.dir/MSTextController.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Saper0_2.dir/MSTextController.cpp.s"
 	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Bartek\CLionProjects\Saper0.2\MSTextController.cpp -o CMakeFiles\Saper0_2.dir\MSTextController.cpp.s
 
-CMakeFiles/Saper0_2.dir/MSGui.cpp.obj: CMakeFiles/Saper0_2.dir/flags.make
-CMakeFiles/Saper0_2.dir/MSGui.cpp.obj: CMakeFiles/Saper0_2.dir/includes_CXX.rsp
-CMakeFiles/Saper0_2.dir/MSGui.cpp.obj: ../MSGui.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Bartek\CLionProjects\Saper0.2\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/Saper0_2.dir/MSGui.cpp.obj"
-	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Saper0_2.dir\MSGui.cpp.obj -c C:\Users\Bartek\CLionProjects\Saper0.2\MSGui.cpp
-
-CMakeFiles/Saper0_2.dir/MSGui.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Saper0_2.dir/MSGui.cpp.i"
-	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Bartek\CLionProjects\Saper0.2\MSGui.cpp > CMakeFiles\Saper0_2.dir\MSGui.cpp.i
-
-CMakeFiles/Saper0_2.dir/MSGui.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Saper0_2.dir/MSGui.cpp.s"
-	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Bartek\CLionProjects\Saper0.2\MSGui.cpp -o CMakeFiles\Saper0_2.dir\MSGui.cpp.s
-
 CMakeFiles/Saper0_2.dir/MSSFMLview.cpp.obj: CMakeFiles/Saper0_2.dir/flags.make
 CMakeFiles/Saper0_2.dir/MSSFMLview.cpp.obj: CMakeFiles/Saper0_2.dir/includes_CXX.rsp
 CMakeFiles/Saper0_2.dir/MSSFMLview.cpp.obj: ../MSSFMLview.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Bartek\CLionProjects\Saper0.2\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/Saper0_2.dir/MSSFMLview.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Bartek\CLionProjects\Saper0.2\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/Saper0_2.dir/MSSFMLview.cpp.obj"
 	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Saper0_2.dir\MSSFMLview.cpp.obj -c C:\Users\Bartek\CLionProjects\Saper0.2\MSSFMLview.cpp
 
 CMakeFiles/Saper0_2.dir/MSSFMLview.cpp.i: cmake_force
@@ -140,19 +126,103 @@ CMakeFiles/Saper0_2.dir/MSSFMLview.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Saper0_2.dir/MSSFMLview.cpp.s"
 	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Bartek\CLionProjects\Saper0.2\MSSFMLview.cpp -o CMakeFiles\Saper0_2.dir\MSSFMLview.cpp.s
 
-CMakeFiles/Saper0_2.dir/MSMouseButton.cpp.obj: CMakeFiles/Saper0_2.dir/flags.make
-CMakeFiles/Saper0_2.dir/MSMouseButton.cpp.obj: CMakeFiles/Saper0_2.dir/includes_CXX.rsp
-CMakeFiles/Saper0_2.dir/MSMouseButton.cpp.obj: ../MSMouseButton.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Bartek\CLionProjects\Saper0.2\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/Saper0_2.dir/MSMouseButton.cpp.obj"
-	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Saper0_2.dir\MSMouseButton.cpp.obj -c C:\Users\Bartek\CLionProjects\Saper0.2\MSMouseButton.cpp
+CMakeFiles/Saper0_2.dir/IntroView.cpp.obj: CMakeFiles/Saper0_2.dir/flags.make
+CMakeFiles/Saper0_2.dir/IntroView.cpp.obj: CMakeFiles/Saper0_2.dir/includes_CXX.rsp
+CMakeFiles/Saper0_2.dir/IntroView.cpp.obj: ../IntroView.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Bartek\CLionProjects\Saper0.2\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/Saper0_2.dir/IntroView.cpp.obj"
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Saper0_2.dir\IntroView.cpp.obj -c C:\Users\Bartek\CLionProjects\Saper0.2\IntroView.cpp
 
-CMakeFiles/Saper0_2.dir/MSMouseButton.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Saper0_2.dir/MSMouseButton.cpp.i"
-	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Bartek\CLionProjects\Saper0.2\MSMouseButton.cpp > CMakeFiles\Saper0_2.dir\MSMouseButton.cpp.i
+CMakeFiles/Saper0_2.dir/IntroView.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Saper0_2.dir/IntroView.cpp.i"
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Bartek\CLionProjects\Saper0.2\IntroView.cpp > CMakeFiles\Saper0_2.dir\IntroView.cpp.i
 
-CMakeFiles/Saper0_2.dir/MSMouseButton.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Saper0_2.dir/MSMouseButton.cpp.s"
-	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Bartek\CLionProjects\Saper0.2\MSMouseButton.cpp -o CMakeFiles\Saper0_2.dir\MSMouseButton.cpp.s
+CMakeFiles/Saper0_2.dir/IntroView.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Saper0_2.dir/IntroView.cpp.s"
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Bartek\CLionProjects\Saper0.2\IntroView.cpp -o CMakeFiles\Saper0_2.dir\IntroView.cpp.s
+
+CMakeFiles/Saper0_2.dir/IntroController.cpp.obj: CMakeFiles/Saper0_2.dir/flags.make
+CMakeFiles/Saper0_2.dir/IntroController.cpp.obj: CMakeFiles/Saper0_2.dir/includes_CXX.rsp
+CMakeFiles/Saper0_2.dir/IntroController.cpp.obj: ../IntroController.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Bartek\CLionProjects\Saper0.2\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/Saper0_2.dir/IntroController.cpp.obj"
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Saper0_2.dir\IntroController.cpp.obj -c C:\Users\Bartek\CLionProjects\Saper0.2\IntroController.cpp
+
+CMakeFiles/Saper0_2.dir/IntroController.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Saper0_2.dir/IntroController.cpp.i"
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Bartek\CLionProjects\Saper0.2\IntroController.cpp > CMakeFiles\Saper0_2.dir\IntroController.cpp.i
+
+CMakeFiles/Saper0_2.dir/IntroController.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Saper0_2.dir/IntroController.cpp.s"
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Bartek\CLionProjects\Saper0.2\IntroController.cpp -o CMakeFiles\Saper0_2.dir\IntroController.cpp.s
+
+CMakeFiles/Saper0_2.dir/ScoreView.cpp.obj: CMakeFiles/Saper0_2.dir/flags.make
+CMakeFiles/Saper0_2.dir/ScoreView.cpp.obj: CMakeFiles/Saper0_2.dir/includes_CXX.rsp
+CMakeFiles/Saper0_2.dir/ScoreView.cpp.obj: ../ScoreView.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Bartek\CLionProjects\Saper0.2\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/Saper0_2.dir/ScoreView.cpp.obj"
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Saper0_2.dir\ScoreView.cpp.obj -c C:\Users\Bartek\CLionProjects\Saper0.2\ScoreView.cpp
+
+CMakeFiles/Saper0_2.dir/ScoreView.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Saper0_2.dir/ScoreView.cpp.i"
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Bartek\CLionProjects\Saper0.2\ScoreView.cpp > CMakeFiles\Saper0_2.dir\ScoreView.cpp.i
+
+CMakeFiles/Saper0_2.dir/ScoreView.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Saper0_2.dir/ScoreView.cpp.s"
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Bartek\CLionProjects\Saper0.2\ScoreView.cpp -o CMakeFiles\Saper0_2.dir\ScoreView.cpp.s
+
+CMakeFiles/Saper0_2.dir/ScoreController.cpp.obj: CMakeFiles/Saper0_2.dir/flags.make
+CMakeFiles/Saper0_2.dir/ScoreController.cpp.obj: CMakeFiles/Saper0_2.dir/includes_CXX.rsp
+CMakeFiles/Saper0_2.dir/ScoreController.cpp.obj: ../ScoreController.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Bartek\CLionProjects\Saper0.2\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/Saper0_2.dir/ScoreController.cpp.obj"
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Saper0_2.dir\ScoreController.cpp.obj -c C:\Users\Bartek\CLionProjects\Saper0.2\ScoreController.cpp
+
+CMakeFiles/Saper0_2.dir/ScoreController.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Saper0_2.dir/ScoreController.cpp.i"
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Bartek\CLionProjects\Saper0.2\ScoreController.cpp > CMakeFiles\Saper0_2.dir\ScoreController.cpp.i
+
+CMakeFiles/Saper0_2.dir/ScoreController.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Saper0_2.dir/ScoreController.cpp.s"
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Bartek\CLionProjects\Saper0.2\ScoreController.cpp -o CMakeFiles\Saper0_2.dir\ScoreController.cpp.s
+
+CMakeFiles/Saper0_2.dir/GameManager.cpp.obj: CMakeFiles/Saper0_2.dir/flags.make
+CMakeFiles/Saper0_2.dir/GameManager.cpp.obj: CMakeFiles/Saper0_2.dir/includes_CXX.rsp
+CMakeFiles/Saper0_2.dir/GameManager.cpp.obj: ../GameManager.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Bartek\CLionProjects\Saper0.2\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/Saper0_2.dir/GameManager.cpp.obj"
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Saper0_2.dir\GameManager.cpp.obj -c C:\Users\Bartek\CLionProjects\Saper0.2\GameManager.cpp
+
+CMakeFiles/Saper0_2.dir/GameManager.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Saper0_2.dir/GameManager.cpp.i"
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Bartek\CLionProjects\Saper0.2\GameManager.cpp > CMakeFiles\Saper0_2.dir\GameManager.cpp.i
+
+CMakeFiles/Saper0_2.dir/GameManager.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Saper0_2.dir/GameManager.cpp.s"
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Bartek\CLionProjects\Saper0.2\GameManager.cpp -o CMakeFiles\Saper0_2.dir\GameManager.cpp.s
+
+CMakeFiles/Saper0_2.dir/MinesweeperView.cpp.obj: CMakeFiles/Saper0_2.dir/flags.make
+CMakeFiles/Saper0_2.dir/MinesweeperView.cpp.obj: CMakeFiles/Saper0_2.dir/includes_CXX.rsp
+CMakeFiles/Saper0_2.dir/MinesweeperView.cpp.obj: ../MinesweeperView.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Bartek\CLionProjects\Saper0.2\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/Saper0_2.dir/MinesweeperView.cpp.obj"
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Saper0_2.dir\MinesweeperView.cpp.obj -c C:\Users\Bartek\CLionProjects\Saper0.2\MinesweeperView.cpp
+
+CMakeFiles/Saper0_2.dir/MinesweeperView.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Saper0_2.dir/MinesweeperView.cpp.i"
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Bartek\CLionProjects\Saper0.2\MinesweeperView.cpp > CMakeFiles\Saper0_2.dir\MinesweeperView.cpp.i
+
+CMakeFiles/Saper0_2.dir/MinesweeperView.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Saper0_2.dir/MinesweeperView.cpp.s"
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Bartek\CLionProjects\Saper0.2\MinesweeperView.cpp -o CMakeFiles\Saper0_2.dir\MinesweeperView.cpp.s
+
+CMakeFiles/Saper0_2.dir/MinesweeperController.cpp.obj: CMakeFiles/Saper0_2.dir/flags.make
+CMakeFiles/Saper0_2.dir/MinesweeperController.cpp.obj: CMakeFiles/Saper0_2.dir/includes_CXX.rsp
+CMakeFiles/Saper0_2.dir/MinesweeperController.cpp.obj: ../MinesweeperController.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Bartek\CLionProjects\Saper0.2\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/Saper0_2.dir/MinesweeperController.cpp.obj"
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Saper0_2.dir\MinesweeperController.cpp.obj -c C:\Users\Bartek\CLionProjects\Saper0.2\MinesweeperController.cpp
+
+CMakeFiles/Saper0_2.dir/MinesweeperController.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Saper0_2.dir/MinesweeperController.cpp.i"
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Bartek\CLionProjects\Saper0.2\MinesweeperController.cpp > CMakeFiles\Saper0_2.dir\MinesweeperController.cpp.i
+
+CMakeFiles/Saper0_2.dir/MinesweeperController.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Saper0_2.dir/MinesweeperController.cpp.s"
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Bartek\CLionProjects\Saper0.2\MinesweeperController.cpp -o CMakeFiles\Saper0_2.dir\MinesweeperController.cpp.s
 
 # Object files for target Saper0_2
 Saper0_2_OBJECTS = \
@@ -160,9 +230,14 @@ Saper0_2_OBJECTS = \
 "CMakeFiles/Saper0_2.dir/Minesweeperboard.cpp.obj" \
 "CMakeFiles/Saper0_2.dir/MSBoardTextView.cpp.obj" \
 "CMakeFiles/Saper0_2.dir/MSTextController.cpp.obj" \
-"CMakeFiles/Saper0_2.dir/MSGui.cpp.obj" \
 "CMakeFiles/Saper0_2.dir/MSSFMLview.cpp.obj" \
-"CMakeFiles/Saper0_2.dir/MSMouseButton.cpp.obj"
+"CMakeFiles/Saper0_2.dir/IntroView.cpp.obj" \
+"CMakeFiles/Saper0_2.dir/IntroController.cpp.obj" \
+"CMakeFiles/Saper0_2.dir/ScoreView.cpp.obj" \
+"CMakeFiles/Saper0_2.dir/ScoreController.cpp.obj" \
+"CMakeFiles/Saper0_2.dir/GameManager.cpp.obj" \
+"CMakeFiles/Saper0_2.dir/MinesweeperView.cpp.obj" \
+"CMakeFiles/Saper0_2.dir/MinesweeperController.cpp.obj"
 
 # External object files for target Saper0_2
 Saper0_2_EXTERNAL_OBJECTS =
@@ -171,9 +246,14 @@ Saper0_2.exe: CMakeFiles/Saper0_2.dir/main.cpp.obj
 Saper0_2.exe: CMakeFiles/Saper0_2.dir/Minesweeperboard.cpp.obj
 Saper0_2.exe: CMakeFiles/Saper0_2.dir/MSBoardTextView.cpp.obj
 Saper0_2.exe: CMakeFiles/Saper0_2.dir/MSTextController.cpp.obj
-Saper0_2.exe: CMakeFiles/Saper0_2.dir/MSGui.cpp.obj
 Saper0_2.exe: CMakeFiles/Saper0_2.dir/MSSFMLview.cpp.obj
-Saper0_2.exe: CMakeFiles/Saper0_2.dir/MSMouseButton.cpp.obj
+Saper0_2.exe: CMakeFiles/Saper0_2.dir/IntroView.cpp.obj
+Saper0_2.exe: CMakeFiles/Saper0_2.dir/IntroController.cpp.obj
+Saper0_2.exe: CMakeFiles/Saper0_2.dir/ScoreView.cpp.obj
+Saper0_2.exe: CMakeFiles/Saper0_2.dir/ScoreController.cpp.obj
+Saper0_2.exe: CMakeFiles/Saper0_2.dir/GameManager.cpp.obj
+Saper0_2.exe: CMakeFiles/Saper0_2.dir/MinesweeperView.cpp.obj
+Saper0_2.exe: CMakeFiles/Saper0_2.dir/MinesweeperController.cpp.obj
 Saper0_2.exe: CMakeFiles/Saper0_2.dir/build.make
 Saper0_2.exe: C:/Users/Bartek/SFML-2.5.1/lib/libsfml-graphics-d.a
 Saper0_2.exe: C:/Users/Bartek/SFML-2.5.1/lib/libsfml-window-d.a
@@ -181,7 +261,7 @@ Saper0_2.exe: C:/Users/Bartek/SFML-2.5.1/lib/libsfml-system-d.a
 Saper0_2.exe: CMakeFiles/Saper0_2.dir/linklibs.rsp
 Saper0_2.exe: CMakeFiles/Saper0_2.dir/objects1.rsp
 Saper0_2.exe: CMakeFiles/Saper0_2.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\Bartek\CLionProjects\Saper0.2\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX executable Saper0_2.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\Bartek\CLionProjects\Saper0.2\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Linking CXX executable Saper0_2.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\Saper0_2.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

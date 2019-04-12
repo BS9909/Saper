@@ -122,6 +122,87 @@ Saper0_2/fast:
 	$(MAKE) -f CMakeFiles\Saper0_2.dir\build.make CMakeFiles/Saper0_2.dir/build
 .PHONY : Saper0_2/fast
 
+GameManager.obj: GameManager.cpp.obj
+
+.PHONY : GameManager.obj
+
+# target to build an object file
+GameManager.cpp.obj:
+	$(MAKE) -f CMakeFiles\Saper0_2.dir\build.make CMakeFiles/Saper0_2.dir/GameManager.cpp.obj
+.PHONY : GameManager.cpp.obj
+
+GameManager.i: GameManager.cpp.i
+
+.PHONY : GameManager.i
+
+# target to preprocess a source file
+GameManager.cpp.i:
+	$(MAKE) -f CMakeFiles\Saper0_2.dir\build.make CMakeFiles/Saper0_2.dir/GameManager.cpp.i
+.PHONY : GameManager.cpp.i
+
+GameManager.s: GameManager.cpp.s
+
+.PHONY : GameManager.s
+
+# target to generate assembly for a file
+GameManager.cpp.s:
+	$(MAKE) -f CMakeFiles\Saper0_2.dir\build.make CMakeFiles/Saper0_2.dir/GameManager.cpp.s
+.PHONY : GameManager.cpp.s
+
+IntroController.obj: IntroController.cpp.obj
+
+.PHONY : IntroController.obj
+
+# target to build an object file
+IntroController.cpp.obj:
+	$(MAKE) -f CMakeFiles\Saper0_2.dir\build.make CMakeFiles/Saper0_2.dir/IntroController.cpp.obj
+.PHONY : IntroController.cpp.obj
+
+IntroController.i: IntroController.cpp.i
+
+.PHONY : IntroController.i
+
+# target to preprocess a source file
+IntroController.cpp.i:
+	$(MAKE) -f CMakeFiles\Saper0_2.dir\build.make CMakeFiles/Saper0_2.dir/IntroController.cpp.i
+.PHONY : IntroController.cpp.i
+
+IntroController.s: IntroController.cpp.s
+
+.PHONY : IntroController.s
+
+# target to generate assembly for a file
+IntroController.cpp.s:
+	$(MAKE) -f CMakeFiles\Saper0_2.dir\build.make CMakeFiles/Saper0_2.dir/IntroController.cpp.s
+.PHONY : IntroController.cpp.s
+
+IntroView.obj: IntroView.cpp.obj
+
+.PHONY : IntroView.obj
+
+# target to build an object file
+IntroView.cpp.obj:
+	$(MAKE) -f CMakeFiles\Saper0_2.dir\build.make CMakeFiles/Saper0_2.dir/IntroView.cpp.obj
+.PHONY : IntroView.cpp.obj
+
+IntroView.i: IntroView.cpp.i
+
+.PHONY : IntroView.i
+
+# target to preprocess a source file
+IntroView.cpp.i:
+	$(MAKE) -f CMakeFiles\Saper0_2.dir\build.make CMakeFiles/Saper0_2.dir/IntroView.cpp.i
+.PHONY : IntroView.cpp.i
+
+IntroView.s: IntroView.cpp.s
+
+.PHONY : IntroView.s
+
+# target to generate assembly for a file
+IntroView.cpp.s:
+	$(MAKE) -f CMakeFiles\Saper0_2.dir\build.make CMakeFiles/Saper0_2.dir/IntroView.cpp.s
+.PHONY : IntroView.cpp.s
+
 MSBoardTextView.obj: MSBoardTextView.cpp.obj
 
 .PHONY : MSBoardTextView.obj
@@ -148,60 +229,6 @@ MSBoardTextView.s: MSBoardTextView.cpp.s
 MSBoardTextView.cpp.s:
 	$(MAKE) -f CMakeFiles\Saper0_2.dir\build.make CMakeFiles/Saper0_2.dir/MSBoardTextView.cpp.s
 .PHONY : MSBoardTextView.cpp.s
-
-MSGui.obj: MSGui.cpp.obj
-
-.PHONY : MSGui.obj
-
-# target to build an object file
-MSGui.cpp.obj:
-	$(MAKE) -f CMakeFiles\Saper0_2.dir\build.make CMakeFiles/Saper0_2.dir/MSGui.cpp.obj
-.PHONY : MSGui.cpp.obj
-
-MSGui.i: MSGui.cpp.i
-
-.PHONY : MSGui.i
-
-# target to preprocess a source file
-MSGui.cpp.i:
-	$(MAKE) -f CMakeFiles\Saper0_2.dir\build.make CMakeFiles/Saper0_2.dir/MSGui.cpp.i
-.PHONY : MSGui.cpp.i
-
-MSGui.s: MSGui.cpp.s
-
-.PHONY : MSGui.s
-
-# target to generate assembly for a file
-MSGui.cpp.s:
-	$(MAKE) -f CMakeFiles\Saper0_2.dir\build.make CMakeFiles/Saper0_2.dir/MSGui.cpp.s
-.PHONY : MSGui.cpp.s
-
-MSMouseButton.obj: MSMouseButton.cpp.obj
-
-.PHONY : MSMouseButton.obj
-
-# target to build an object file
-MSMouseButton.cpp.obj:
-	$(MAKE) -f CMakeFiles\Saper0_2.dir\build.make CMakeFiles/Saper0_2.dir/MSMouseButton.cpp.obj
-.PHONY : MSMouseButton.cpp.obj
-
-MSMouseButton.i: MSMouseButton.cpp.i
-
-.PHONY : MSMouseButton.i
-
-# target to preprocess a source file
-MSMouseButton.cpp.i:
-	$(MAKE) -f CMakeFiles\Saper0_2.dir\build.make CMakeFiles/Saper0_2.dir/MSMouseButton.cpp.i
-.PHONY : MSMouseButton.cpp.i
-
-MSMouseButton.s: MSMouseButton.cpp.s
-
-.PHONY : MSMouseButton.s
-
-# target to generate assembly for a file
-MSMouseButton.cpp.s:
-	$(MAKE) -f CMakeFiles\Saper0_2.dir\build.make CMakeFiles/Saper0_2.dir/MSMouseButton.cpp.s
-.PHONY : MSMouseButton.cpp.s
 
 MSSFMLview.obj: MSSFMLview.cpp.obj
 
@@ -257,6 +284,60 @@ MSTextController.cpp.s:
 	$(MAKE) -f CMakeFiles\Saper0_2.dir\build.make CMakeFiles/Saper0_2.dir/MSTextController.cpp.s
 .PHONY : MSTextController.cpp.s
 
+MinesweeperController.obj: MinesweeperController.cpp.obj
+
+.PHONY : MinesweeperController.obj
+
+# target to build an object file
+MinesweeperController.cpp.obj:
+	$(MAKE) -f CMakeFiles\Saper0_2.dir\build.make CMakeFiles/Saper0_2.dir/MinesweeperController.cpp.obj
+.PHONY : MinesweeperController.cpp.obj
+
+MinesweeperController.i: MinesweeperController.cpp.i
+
+.PHONY : MinesweeperController.i
+
+# target to preprocess a source file
+MinesweeperController.cpp.i:
+	$(MAKE) -f CMakeFiles\Saper0_2.dir\build.make CMakeFiles/Saper0_2.dir/MinesweeperController.cpp.i
+.PHONY : MinesweeperController.cpp.i
+
+MinesweeperController.s: MinesweeperController.cpp.s
+
+.PHONY : MinesweeperController.s
+
+# target to generate assembly for a file
+MinesweeperController.cpp.s:
+	$(MAKE) -f CMakeFiles\Saper0_2.dir\build.make CMakeFiles/Saper0_2.dir/MinesweeperController.cpp.s
+.PHONY : MinesweeperController.cpp.s
+
+MinesweeperView.obj: MinesweeperView.cpp.obj
+
+.PHONY : MinesweeperView.obj
+
+# target to build an object file
+MinesweeperView.cpp.obj:
+	$(MAKE) -f CMakeFiles\Saper0_2.dir\build.make CMakeFiles/Saper0_2.dir/MinesweeperView.cpp.obj
+.PHONY : MinesweeperView.cpp.obj
+
+MinesweeperView.i: MinesweeperView.cpp.i
+
+.PHONY : MinesweeperView.i
+
+# target to preprocess a source file
+MinesweeperView.cpp.i:
+	$(MAKE) -f CMakeFiles\Saper0_2.dir\build.make CMakeFiles/Saper0_2.dir/MinesweeperView.cpp.i
+.PHONY : MinesweeperView.cpp.i
+
+MinesweeperView.s: MinesweeperView.cpp.s
+
+.PHONY : MinesweeperView.s
+
+# target to generate assembly for a file
+MinesweeperView.cpp.s:
+	$(MAKE) -f CMakeFiles\Saper0_2.dir\build.make CMakeFiles/Saper0_2.dir/MinesweeperView.cpp.s
+.PHONY : MinesweeperView.cpp.s
+
 Minesweeperboard.obj: Minesweeperboard.cpp.obj
 
 .PHONY : Minesweeperboard.obj
@@ -283,6 +364,60 @@ Minesweeperboard.s: Minesweeperboard.cpp.s
 Minesweeperboard.cpp.s:
 	$(MAKE) -f CMakeFiles\Saper0_2.dir\build.make CMakeFiles/Saper0_2.dir/Minesweeperboard.cpp.s
 .PHONY : Minesweeperboard.cpp.s
+
+ScoreController.obj: ScoreController.cpp.obj
+
+.PHONY : ScoreController.obj
+
+# target to build an object file
+ScoreController.cpp.obj:
+	$(MAKE) -f CMakeFiles\Saper0_2.dir\build.make CMakeFiles/Saper0_2.dir/ScoreController.cpp.obj
+.PHONY : ScoreController.cpp.obj
+
+ScoreController.i: ScoreController.cpp.i
+
+.PHONY : ScoreController.i
+
+# target to preprocess a source file
+ScoreController.cpp.i:
+	$(MAKE) -f CMakeFiles\Saper0_2.dir\build.make CMakeFiles/Saper0_2.dir/ScoreController.cpp.i
+.PHONY : ScoreController.cpp.i
+
+ScoreController.s: ScoreController.cpp.s
+
+.PHONY : ScoreController.s
+
+# target to generate assembly for a file
+ScoreController.cpp.s:
+	$(MAKE) -f CMakeFiles\Saper0_2.dir\build.make CMakeFiles/Saper0_2.dir/ScoreController.cpp.s
+.PHONY : ScoreController.cpp.s
+
+ScoreView.obj: ScoreView.cpp.obj
+
+.PHONY : ScoreView.obj
+
+# target to build an object file
+ScoreView.cpp.obj:
+	$(MAKE) -f CMakeFiles\Saper0_2.dir\build.make CMakeFiles/Saper0_2.dir/ScoreView.cpp.obj
+.PHONY : ScoreView.cpp.obj
+
+ScoreView.i: ScoreView.cpp.i
+
+.PHONY : ScoreView.i
+
+# target to preprocess a source file
+ScoreView.cpp.i:
+	$(MAKE) -f CMakeFiles\Saper0_2.dir\build.make CMakeFiles/Saper0_2.dir/ScoreView.cpp.i
+.PHONY : ScoreView.cpp.i
+
+ScoreView.s: ScoreView.cpp.s
+
+.PHONY : ScoreView.s
+
+# target to generate assembly for a file
+ScoreView.cpp.s:
+	$(MAKE) -f CMakeFiles\Saper0_2.dir\build.make CMakeFiles/Saper0_2.dir/ScoreView.cpp.s
+.PHONY : ScoreView.cpp.s
 
 main.obj: main.cpp.obj
 
@@ -320,24 +455,39 @@ help:
 	@echo ... rebuild_cache
 	@echo ... Saper0_2
 	@echo ... edit_cache
+	@echo ... GameManager.obj
+	@echo ... GameManager.i
+	@echo ... GameManager.s
+	@echo ... IntroController.obj
+	@echo ... IntroController.i
+	@echo ... IntroController.s
+	@echo ... IntroView.obj
+	@echo ... IntroView.i
+	@echo ... IntroView.s
 	@echo ... MSBoardTextView.obj
 	@echo ... MSBoardTextView.i
 	@echo ... MSBoardTextView.s
-	@echo ... MSGui.obj
-	@echo ... MSGui.i
-	@echo ... MSGui.s
-	@echo ... MSMouseButton.obj
-	@echo ... MSMouseButton.i
-	@echo ... MSMouseButton.s
 	@echo ... MSSFMLview.obj
 	@echo ... MSSFMLview.i
 	@echo ... MSSFMLview.s
 	@echo ... MSTextController.obj
 	@echo ... MSTextController.i
 	@echo ... MSTextController.s
+	@echo ... MinesweeperController.obj
+	@echo ... MinesweeperController.i
+	@echo ... MinesweeperController.s
+	@echo ... MinesweeperView.obj
+	@echo ... MinesweeperView.i
+	@echo ... MinesweeperView.s
 	@echo ... Minesweeperboard.obj
 	@echo ... Minesweeperboard.i
 	@echo ... Minesweeperboard.s
+	@echo ... ScoreController.obj
+	@echo ... ScoreController.i
+	@echo ... ScoreController.s
+	@echo ... ScoreView.obj
+	@echo ... ScoreView.i
+	@echo ... ScoreView.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
