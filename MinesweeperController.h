@@ -3,15 +3,19 @@
 
 #include <SFML/Graphics.hpp>
 #include "MinesweeperView.h"
+#include "MSSFMLview.h"
+#include "Minesweeperboard.h"
 
 class MinesweeperController {
     bool finished = false;
 
     MinesweeperView & view;
+    sf::RenderWindow &win;
+    MSSFMLview &mssfmLview;
+    Minesweeperboard &msb;
     // ... & model;
 public:
-    explicit MinesweeperController(MinesweeperView & v);
-public:
+    MinesweeperController(MinesweeperView & v, sf::RenderWindow &win, MSSFMLview &mssfmLview,Minesweeperboard &msb);
     void handleEvent(sf::Event &event);
 
     // no need to change this

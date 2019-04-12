@@ -10,12 +10,14 @@
 
 #include <SFML/Graphics.hpp>
 
-MSSFMLview::MSSFMLview(int squarsize,Minesweeperboard &msb,int square_position_x,int square_position_y): msb(msb) {
+MSSFMLview::MSSFMLview(int squarsize,Minesweeperboard &msb,int square_position_x,int square_position_y,sf::RenderWindow &win): msb(msb),
+win(win)
+{
     this->squaresize = squarsize;
     this->square_position_x = square_position_x;
     this->square_position_y = square_position_y;
 }
-void MSSFMLview::draw(sf::RenderWindow &win) {
+void MSSFMLview::draw() {
     //Ustawiam parametry kwadratów
     sf::CircleShape square(squaresize,4);
     square.rotate(45);
@@ -24,6 +26,9 @@ void MSSFMLview::draw(sf::RenderWindow &win) {
     font.loadFromFile("arial.ttf");
     sf::Text text;
     //Ustawiam parametry czcionki:
+    text.setCharacterSize(50);
+    text.setOutlineThickness(-2);
+    text.setOutlineColor(sf::Color::Cyan);
     text.setCharacterSize(squaresize);
     text.setFillColor(sf::Color::Blue);
     text.setOutlineThickness(1);
@@ -38,8 +43,7 @@ void MSSFMLview::draw(sf::RenderWindow &win) {
         for (int i = 0; i < msb.getBoardWidth(); ++i) {
             //Tworzenie kwadratów i nadawanie im początkowych wartość
             square.setPosition(square_position_y + i*(squaresize*2)/pow(2, 0.5), square_position_x + j*(squaresize*2)/pow(2, 0.5));
-            rectangleBox.push_back(square);
-            //rectangleBox[i][j] = square;
+            squareBox.push_back(square);
             square.setFillColor(sf::Color::Black);
             square.setOutlineThickness(-1);
             square.setOutlineColor(sf::Color::Red);;
@@ -64,6 +68,7 @@ void MSSFMLview::draw(sf::RenderWindow &win) {
                 switch (msb.getFieldInfo(j,i)){
                     case '1': text.setString("1");
                         text.setPosition(square_position_y-10+i*sqrt(2)*squaresize,square_position_x+j*sqrt(2)*squaresize+0.8*squaresize);
+                        win.draw(text);
                         win.draw(text);
                         break;
                     case '2': text.setString("2");
@@ -96,7 +101,16 @@ void MSSFMLview::draw(sf::RenderWindow &win) {
                         break;
 
                 }
-                }
             }
+
         }
     }
+}
+
+sf::RenderWindow &MSSFMLview::getWindow()  {
+    return win;
+}
+const std::vector<sf::CircleShape>& MSSFMLview::getSquareBox() {
+    return squareBox;
+}
+

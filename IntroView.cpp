@@ -2,7 +2,7 @@
 #include <cstdlib> // abort()
 
 
-IntroView::IntroView() {
+IntroView::IntroView(sf::RenderWindow &window): window(window) {
     if (!font.loadFromFile("arial.ttf")) {
         abort();
     }
@@ -46,7 +46,14 @@ IntroView::IntroView() {
     txt_hard.setFillColor(sf::Color::Red);
     txt_hard.setCharacterSize(20);
 
+    auto mouse_position = sf::Mouse::getPosition(window);
+    auto translated_pos = window.mapPixelToCoords(mouse_position);
+    if(rect.getGlobalBounds().contains(translated_pos)){
+        if (sf::Mouse::isButtonPressed(sf::Mouse::Button::Left))
+        {
 
+        }
+    }
 }
 
 void IntroView::draw(sf::RenderWindow &win) {
@@ -59,4 +66,12 @@ void IntroView::draw(sf::RenderWindow &win) {
     win.draw(txt_normal);
     win.draw(rect_hard_mode);
     win.draw(txt_hard);
+}
+
+sf::RenderWindow &IntroView::getWindow() const {
+    return window;
+}
+
+const sf::RectangleShape &IntroView::getRect() const {
+    return rect;
 }

@@ -1,4 +1,7 @@
 #include <SFML/Graphics.hpp>
+#include "MSSFMLview.h"
+#include "Minesweeperboard.h"
+#include "MSSFMLview.h"
 #include "ScoreController.h"
 #include "ScoreView.h"
 #include "IntroController.h"
@@ -14,16 +17,19 @@
 int main() {
     // Create the main window
     sf::RenderWindow win(sf::VideoMode(800, 600), "SFML window");
+    Minesweeperboard board(9,7,DEBUG);
+    MSSFMLview sfml_view(50.f, board, 25,50,win);
 
-    IntroView iv;
+    IntroView iv(win);
     IntroController ic(iv);
     // generalnie - do kontrolera przekażemy referencje na widok i model, czyli
     // IntroController ic(iv, im);
     // w tym przypadku model jest tak prosty, że "zintegrowałem" go z widokiem
 
     // fake - zastąpcie Waszą klasą, dodajcie model planszy
-    MinesweeperView mv;
-    MinesweeperController mc(mv);
+
+    MinesweeperView mv(sfml_view);
+    MinesweeperController mc(mv, win,sfml_view,board);
 
     // uwagi jak do Intro
     ScoreView sv;
