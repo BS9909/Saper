@@ -10,7 +10,7 @@
 
 #include <SFML/Graphics.hpp>
 
-MSSFMLview::MSSFMLview(int squarsize,Minesweeperboard &msb,int square_position_x,int square_position_y,sf::RenderWindow &win): msb(msb),
+MSSFMLview::MSSFMLview(int squarsize, Minesweeperboard &msb,int square_position_x,int square_position_y,sf::RenderWindow &win): msb(msb),
 win(win)
 {
     this->squaresize = squarsize;

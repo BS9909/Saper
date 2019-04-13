@@ -5,6 +5,7 @@
 
 #include "Minesweeperboard.h"
 #include "MSTextController.h"
+#include "IntroController.h"
 #include <cstdlib>
 #include <ctime>
 #include <string>
@@ -12,11 +13,13 @@
 #include <iostream>
 
 
-Minesweeperboard::Minesweeperboard(int width, int high, GameMode mode) {
+Minesweeperboard::Minesweeperboard(IntroController &introController):
+introController(introController)
+{
+    high = 7;
+    width = 9;
     game_status = RUNNING;
     firstMove = true;
-    this ->width = width;
-    this ->high = high;
     double amountsOfMines=0;
     int row=0, column=0;
     for(int i=0; i<high; i++){//row = i
@@ -27,7 +30,19 @@ Minesweeperboard::Minesweeperboard(int width, int high, GameMode mode) {
 
         }
     }
-    if(mode==EASY){
+    if(introController.getIntroSize() == intro_small){
+        width = 10;
+        high=10;
+    }
+    if(introController.getIntroSize() == intro_normal){
+        width = 20;
+        high=15;
+    }
+    if(introController.getIntroSize() == intro_big){
+        width = 30;
+        high=20;
+    }
+    if(introController.getGameMode()==INTRO_EASY){
         amountsOfMines = 0.1*width*high;
         for(int i=0; i<amountsOfMines; i++){
             row = rand()% high;
@@ -35,7 +50,7 @@ Minesweeperboard::Minesweeperboard(int width, int high, GameMode mode) {
             board[row][column].hasMine = true;
         }
     }
-    if(mode==NORMAL){
+    if(introController.getGameMode()==INTRO_NORMAL){
         amountsOfMines = 0.2*width*high;
         for(int i=0; i<amountsOfMines; i++){
             row = rand()% high;
@@ -43,7 +58,7 @@ Minesweeperboard::Minesweeperboard(int width, int high, GameMode mode) {
             board[row][column].hasMine = true;
         }
     }
-    if(mode==HARD){
+    if(introController.getGameMode()==INTRO_HARD){
         amountsOfMines = 0.3*width*high;
         for(int i=0; i<amountsOfMines; i++){
             row = rand()% high;
@@ -51,11 +66,11 @@ Minesweeperboard::Minesweeperboard(int width, int high, GameMode mode) {
             board[row][column].hasMine = true;
         }
     }
-    if(mode==DEBUG){
-        for(int i=0; i<width; i++) board[0][i].hasMine = true; //wypelniamy kolumny minami w debug
-        for(int i=0; i<high; i+=2) board[i][0].hasMine = true; //wypełniamy wiersze minami w debugu
-        for(int i = 0; i<width && i<high; i++) board[i][i].hasMine = true;
-    }
+//    if(mode==DEBUG){
+//        for(int i=0; i<width; i++) board[0][i].hasMine = true; //wypelniamy kolumny minami w debug
+//        for(int i=0; i<high; i+=2) board[i][0].hasMine = true; //wypełniamy wiersze minami w debugu
+//        for(int i = 0; i<width && i<high; i++) board[i][i].hasMine = true;
+//    }
 }
 void Minesweeperboard::debug_display() const {
     for(int i=0; i<high; i++){

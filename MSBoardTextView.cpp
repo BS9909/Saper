@@ -15,6 +15,6 @@ void MSBoardTextView::display() const {
         }std::cout<<std::endl;
     }
 }
-MSBoardTextView::MSBoardTextView(Minesweeperboard &b): board(b){
-    board = b;
-}
+//MSBoardTextView::MSBoardTextView(Minesweeperboard &b): board(b){
+//    board = b;
+//}

@@ -15,8 +15,8 @@ IntroView::IntroView(sf::RenderWindow &window): window(window) {
     txt.setCharacterSize(20);
 
     txt.setFont(font);
-    txt.setString("Intro");
-    txt.setPosition(350, 20);
+    txt.setString("SAPER");
+    txt.setPosition(300, 20);
     txt.setOutlineThickness(4);
     txt.setOutlineColor(sf::Color::Magenta);
     txt.setFillColor(sf::Color::Cyan);
@@ -46,14 +46,29 @@ IntroView::IntroView(sf::RenderWindow &window): window(window) {
     txt_hard.setFillColor(sf::Color::Red);
     txt_hard.setCharacterSize(20);
 
-    auto mouse_position = sf::Mouse::getPosition(window);
-    auto translated_pos = window.mapPixelToCoords(mouse_position);
-    if(rect.getGlobalBounds().contains(translated_pos)){
-        if (sf::Mouse::isButtonPressed(sf::Mouse::Button::Left))
-        {
+    rect_small_size.setSize(sf::Vector2f(100,50));
+    rect_small_size.setPosition(400,100);
+    txt_small_size.setFont(font);
+    txt_small_size.setString("10x10");
+    txt_small_size.setPosition(425,100);
+    txt_small_size.setFillColor(sf::Color::Red);
+    txt_small_size.setCharacterSize(20);
 
-        }
-    }
+    rect_normal_size.setSize(sf::Vector2f(100,50));
+    rect_normal_size.setPosition(400, 175);
+    txt_normal_size.setFont(font);
+    txt_normal_size.setString("20x15");
+    txt_normal_size.setPosition(425, 175);
+    txt_normal_size.setFillColor(sf::Color::Red);
+    txt_normal_size.setCharacterSize(20);
+
+    rect_big_size.setSize(sf::Vector2f(100,50));
+    rect_big_size.setPosition(400, 250);
+    txt_big_size.setFont(font);
+    txt_big_size.setString("30x20");
+    txt_big_size.setPosition(425, 250);
+    txt_big_size.setFillColor(sf::Color::Red);
+    txt_big_size.setCharacterSize(20);
 }
 
 void IntroView::draw(sf::RenderWindow &win) {
@@ -66,6 +81,12 @@ void IntroView::draw(sf::RenderWindow &win) {
     win.draw(txt_normal);
     win.draw(rect_hard_mode);
     win.draw(txt_hard);
+    win.draw(rect_small_size);
+    win.draw(txt_small_size);
+    win.draw(rect_normal_size);
+    win.draw(txt_normal_size);
+    win.draw(rect_big_size);
+    win.draw(txt_big_size);
 }
 
 sf::RenderWindow &IntroView::getWindow() const {
@@ -75,3 +96,28 @@ sf::RenderWindow &IntroView::getWindow() const {
 const sf::RectangleShape &IntroView::getRect() const {
     return rect;
 }
+
+const sf::RectangleShape &IntroView::getRect_easy_mode() const {
+    return rect_easy_mode;
+}
+
+const sf::RectangleShape &IntroView::getRect_normal_mode() const {
+    return rect_normal_mode;
+}
+
+const sf::RectangleShape &IntroView::getRect_hard_mode() const {
+    return rect_hard_mode;
+}
+
+const sf::RectangleShape &IntroView::getRect_small_size() const {
+    return rect_small_size;
+}
+
+const sf::RectangleShape &IntroView::getRect_normal_size() const {
+    return rect_normal_size;
+}
+
+const sf::RectangleShape &IntroView::getRect_big_size() const {
+    return rect_big_size;
+}
+

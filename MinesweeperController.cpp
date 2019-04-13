@@ -13,7 +13,8 @@ void MinesweeperController::handleEvent(sf::Event &event) {
     {
         if (event.mouseButton.button == sf::Mouse::Left)
         {
-            msb.revealField(192/event.mouseButton.x, 192/event.mouseButton.y+50); // albo na odwrót - zależnie jak to sobie zdefiniowaliście
+            msb.revealField(0,0); // albo na odwrót - zależnie jak to sobie zdefiniowaliście
+            msb.revealField(0,1);
         }
         else if (event.mouseButton.button == sf::Mouse::Right)
         {

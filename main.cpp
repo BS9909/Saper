@@ -13,15 +13,20 @@
 #include "MSSFMLview.h"
 #include <cmath>
 #include "GameManager.h"
+#include <conio.h>
+#include <ctime>
 
 int main() {
+    srand(time(NULL));
     // Create the main window
     sf::RenderWindow win(sf::VideoMode(800, 600), "Saper");
-    Minesweeperboard board(9,7,DEBUG);
-    MSSFMLview sfml_view(50.f, board, 0,50,win);
-
     IntroView iv(win);
     IntroController ic(iv);
+
+    Minesweeperboard board(ic);
+    MSSFMLview sfml_view(50.f, board, 0,50,win);
+
+
     // generalnie - do kontrolera przekażemy referencje na widok i model, czyli
     // IntroController ic(iv, im);
     // w tym przypadku model jest tak prosty, że "zintegrowałem" go z widokiem
@@ -66,6 +71,7 @@ int main() {
         // Update the window
         win.display();
     }
+    board.debug_display();
 
     return EXIT_SUCCESS;
 }

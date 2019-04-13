@@ -4,9 +4,20 @@
 #include <SFML/Graphics.hpp>
 #include "IntroView.h"
 
+enum IntroGameMode {INTRO_EASY, INTRO_NORMAL, INTRO_HARD};
+enum IntroSize {intro_small, intro_normal, intro_big};
+
+
 class IntroController {
     bool finished = false;
     IntroView & view;
+    IntroGameMode gameMode;
+    IntroSize introSize;
+public:
+    IntroSize getIntroSize() const;
+
+public:
+    IntroGameMode getGameMode() const;
 
     // IntroModel & model;
 public:
