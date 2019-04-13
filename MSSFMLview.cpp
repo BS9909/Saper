@@ -43,7 +43,6 @@ void MSSFMLview::draw() {
         for (int i = 0; i < msb.getBoardWidth(); ++i) {
             //Tworzenie kwadratów i nadawanie im początkowych wartość
             square.setPosition(square_position_y + i*(squaresize*2)/pow(2, 0.5), square_position_x + j*(squaresize*2)/pow(2, 0.5));
-            squareBox.push_back(square);
             square.setFillColor(sf::Color::Black);
             square.setOutlineThickness(-1);
             square.setOutlineColor(sf::Color::Red);;

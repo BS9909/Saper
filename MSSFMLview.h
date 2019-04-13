@@ -25,6 +25,7 @@ public:
 
 public:
     MSSFMLview(int squarsize,Minesweeperboard &msb,int square_position_x,int square_position_y,sf::RenderWindow &win);
+    void eventsController() const;
     void draw();
 };
 

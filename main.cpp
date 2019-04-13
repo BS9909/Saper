@@ -16,9 +16,9 @@
 
 int main() {
     // Create the main window
-    sf::RenderWindow win(sf::VideoMode(800, 600), "SFML window");
+    sf::RenderWindow win(sf::VideoMode(800, 600), "Saper");
     Minesweeperboard board(9,7,DEBUG);
-    MSSFMLview sfml_view(50.f, board, 25,50,win);
+    MSSFMLview sfml_view(50.f, board, 0,50,win);
 
     IntroView iv(win);
     IntroController ic(iv);
@@ -48,7 +48,15 @@ int main() {
 
             gm.handleEvent(event);
         }
-
+        if (event.type == sf::Event::MouseButtonPressed)
+        {
+            if (event.mouseButton.button == sf::Mouse::Right)
+            {
+                std::cout << "the right button was pressed" << std::endl;
+                std::cout << "mouse x: " << event.mouseButton.x << std::endl;
+                std::cout << "mouse y: " << event.mouseButton.y << std::endl;
+            }
+        }
         // Clear screen
         win.clear();
 
