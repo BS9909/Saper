@@ -20,18 +20,17 @@ int main() {
     srand(time(NULL));
     // Create the main window
     sf::RenderWindow win(sf::VideoMode(800, 600), "Saper");
-    IntroView iv(win);
-    IntroController ic(iv);
-
-    Minesweeperboard board(ic);
-    MSSFMLview sfml_view(50.f, board, 0,50,win);
-
 
     // generalnie - do kontrolera przekażemy referencje na widok i model, czyli
     // IntroController ic(iv, im);
     // w tym przypadku model jest tak prosty, że "zintegrowałem" go z widokiem
 
     // fake - zastąpcie Waszą klasą, dodajcie model planszy
+    IntroView iv(win);
+    IntroController ic(iv);
+
+    Minesweeperboard board(ic);
+    MSSFMLview sfml_view(50.f, board, 0,50,win);
 
     MinesweeperView mv(sfml_view);
     MinesweeperController mc(mv, win,sfml_view,board);

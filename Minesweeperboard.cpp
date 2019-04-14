@@ -13,13 +13,13 @@
 #include <iostream>
 
 
-Minesweeperboard::Minesweeperboard(IntroController &introController):
-introController(introController)
-{
-    high = 7;
-    width = 9;
+Minesweeperboard::Minesweeperboard(IntroController &introController):introController(introController) {
+    srand(time(NULL));
     game_status = RUNNING;
     firstMove = true;
+//    this ->width = width;
+//    this ->high = high;
+
     double amountsOfMines=0;
     int row=0, column=0;
     for(int i=0; i<high; i++){//row = i
@@ -30,19 +30,19 @@ introController(introController)
 
         }
     }
-    if(introController.getIntroSize() == intro_small){
-        width = 10;
+    if(introController.getIntroSize()==intro_small){
+        width=10;
         high=10;
     }
-    if(introController.getIntroSize() == intro_normal){
-        width = 20;
-        high=15;
-    }
-    if(introController.getIntroSize() == intro_big){
-        width = 30;
+    if(introController.getIntroSize()==intro_normal){
+        width=15;
         high=20;
     }
-    if(introController.getGameMode()==INTRO_EASY){
+    if(introController.getIntroSize()==intro_big){
+        width=20;
+        high=30;
+    }
+    if(introController.getIntroGameMode()==INTRO_EASY){
         amountsOfMines = 0.1*width*high;
         for(int i=0; i<amountsOfMines; i++){
             row = rand()% high;
@@ -50,7 +50,7 @@ introController(introController)
             board[row][column].hasMine = true;
         }
     }
-    if(introController.getGameMode()==INTRO_NORMAL){
+    if(introController.getIntroGameMode()==INTRO_NORMAL){
         amountsOfMines = 0.2*width*high;
         for(int i=0; i<amountsOfMines; i++){
             row = rand()% high;
@@ -58,7 +58,7 @@ introController(introController)
             board[row][column].hasMine = true;
         }
     }
-    if(introController.getGameMode()==INTRO_HARD){
+    if(introController.getIntroGameMode()==INTRO_HARD){
         amountsOfMines = 0.3*width*high;
         for(int i=0; i<amountsOfMines; i++){
             row = rand()% high;
@@ -179,3 +179,7 @@ void Minesweeperboard::newMine(int row, int column) {
     board[row][column].hasMine = false;
     board[newRow][newColumn].hasMine = true;
 }
+
+
+
+

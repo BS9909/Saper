@@ -1,7 +1,8 @@
 #include "IntroController.h"
-#include "GameManager.h"
+//#include "GameManager.h"
 
-IntroController::IntroController(IntroView &v) : view(v)
+
+IntroController::IntroController(IntroView &view) : view(view)
 {}
 
 void IntroController::handleEvent(sf::Event &event) {
@@ -10,19 +11,22 @@ void IntroController::handleEvent(sf::Event &event) {
     if(view.getRect_easy_mode().getGlobalBounds().contains(translated_pos)){
         if (sf::Mouse::isButtonPressed(sf::Mouse::Button::Left))
         {
-            gameMode = INTRO_EASY;
+            introGameMode = INTRO_EASY;
+
         }
     }
-    else if(view.getRect_normal_mode().getGlobalBounds().contains(translated_pos)){
+    if(view.getRect_normal_mode().getGlobalBounds().contains(translated_pos)){
         if (sf::Mouse::isButtonPressed(sf::Mouse::Button::Left))
         {
-            gameMode = INTRO_NORMAL;
+            introGameMode = INTRO_NORMAL;
+
         }
     }
-    else if(view.getRect_hard_mode().getGlobalBounds().contains(translated_pos)){
+   if(view.getRect_hard_mode().getGlobalBounds().contains(translated_pos)){
         if (sf::Mouse::isButtonPressed(sf::Mouse::Button::Left))
         {
-            gameMode = INTRO_HARD;
+           introGameMode = INTRO_HARD;
+
         }
     }
 
@@ -42,6 +46,7 @@ void IntroController::handleEvent(sf::Event &event) {
         if (sf::Mouse::isButtonPressed(sf::Mouse::Button::Left))
         {
             introSize = intro_big;
+            finished = true;
         }
     }
     if(view.getRect().getGlobalBounds().contains(translated_pos)){
@@ -52,10 +57,11 @@ void IntroController::handleEvent(sf::Event &event) {
     }
 }
 
-IntroGameMode IntroController::getGameMode() const {
-    return gameMode;
+IntroGameMode IntroController::getIntroGameMode() const {
+    return introGameMode;
 }
 
 IntroSize IntroController::getIntroSize() const {
     return introSize;
 }
+

@@ -4,6 +4,7 @@
 
 #ifndef SAPER0_2_MINESWEEPERBOARD_H
 #define SAPER0_2_MINESWEEPERBOARD_H
+
 #include "IntroController.h"
 
 
@@ -24,6 +25,7 @@ class Minesweeperboard {
     bool hasMine(int row, int column)const;
     GameState game_status;
     IntroController &introController;
+
 private:
     bool firstMove;
 public:

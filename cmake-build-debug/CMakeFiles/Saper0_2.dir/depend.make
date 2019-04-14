@@ -86,16 +86,9 @@ CMakeFiles/Saper0_2.dir/GameManager.cpp.obj: C:/Users/Bartek/SFML-2.5.1/include/
 CMakeFiles/Saper0_2.dir/GameManager.cpp.obj: C:/Users/Bartek/SFML-2.5.1/include/SFML/Window/WindowHandle.hpp
 CMakeFiles/Saper0_2.dir/GameManager.cpp.obj: C:/Users/Bartek/SFML-2.5.1/include/SFML/Window/WindowStyle.hpp
 
-CMakeFiles/Saper0_2.dir/IntroController.cpp.obj: ../GameManager.h
 CMakeFiles/Saper0_2.dir/IntroController.cpp.obj: ../IntroController.cpp
 CMakeFiles/Saper0_2.dir/IntroController.cpp.obj: ../IntroController.h
 CMakeFiles/Saper0_2.dir/IntroController.cpp.obj: ../IntroView.h
-CMakeFiles/Saper0_2.dir/IntroController.cpp.obj: ../MSSFMLview.h
-CMakeFiles/Saper0_2.dir/IntroController.cpp.obj: ../MinesweeperController.h
-CMakeFiles/Saper0_2.dir/IntroController.cpp.obj: ../MinesweeperView.h
-CMakeFiles/Saper0_2.dir/IntroController.cpp.obj: ../Minesweeperboard.h
-CMakeFiles/Saper0_2.dir/IntroController.cpp.obj: ../ScoreController.h
-CMakeFiles/Saper0_2.dir/IntroController.cpp.obj: ../ScoreView.h
 CMakeFiles/Saper0_2.dir/IntroController.cpp.obj: C:/Users/Bartek/SFML-2.5.1/include/SFML/Config.hpp
 CMakeFiles/Saper0_2.dir/IntroController.cpp.obj: C:/Users/Bartek/SFML-2.5.1/include/SFML/Graphics.hpp
 CMakeFiles/Saper0_2.dir/IntroController.cpp.obj: C:/Users/Bartek/SFML-2.5.1/include/SFML/Graphics/BlendMode.hpp
