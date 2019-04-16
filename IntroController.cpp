@@ -1,31 +1,36 @@
 #include "IntroController.h"
-//#include "GameManager.h"
+#include "GameManager.h"
 
-
-IntroController::IntroController(IntroView &view) : view(view)
+IntroController::IntroController(IntroView &v,Minesweeperboard &msb) : view(v),
+msb(msb)
 {}
 
 void IntroController::handleEvent(sf::Event &event) {
     auto mouse_position = sf::Mouse::getPosition(view.getWindow());
     auto translated_pos = view.getWindow().mapPixelToCoords(mouse_position);
+
+    //std::cout<<game_mode<<std::endl;
+
     if(view.getRect_easy_mode().getGlobalBounds().contains(translated_pos)){
         if (sf::Mouse::isButtonPressed(sf::Mouse::Button::Left))
         {
-            introGameMode = INTRO_EASY;
+            msb.setGameMOde(EASY);
+            view.text_mode.setString("EASY");
+        }
+    }
+     if(view.getRect_normal_mode().getGlobalBounds().contains(translated_pos)){
+        if (sf::Mouse::isButtonPressed(sf::Mouse::Button::Left))
+        {
+            msb.setGameMOde(NORMAL);
+            view.text_mode.setString("NORMAL");
 
         }
     }
-    if(view.getRect_normal_mode().getGlobalBounds().contains(translated_pos)){
+     if(view.getRect_hard_mode().getGlobalBounds().contains(translated_pos)){
         if (sf::Mouse::isButtonPressed(sf::Mouse::Button::Left))
         {
-            introGameMode = INTRO_NORMAL;
-
-        }
-    }
-   if(view.getRect_hard_mode().getGlobalBounds().contains(translated_pos)){
-        if (sf::Mouse::isButtonPressed(sf::Mouse::Button::Left))
-        {
-           introGameMode = INTRO_HARD;
+            msb.setGameMOde(HARD);
+            view.text_mode.setString("HARD");
 
         }
     }
@@ -46,7 +51,6 @@ void IntroController::handleEvent(sf::Event &event) {
         if (sf::Mouse::isButtonPressed(sf::Mouse::Button::Left))
         {
             introSize = intro_big;
-            finished = true;
         }
     }
     if(view.getRect().getGlobalBounds().contains(translated_pos)){
@@ -54,14 +58,20 @@ void IntroController::handleEvent(sf::Event &event) {
         {
             finished = true;
         }
-    }
+   }
+
 }
 
-IntroGameMode IntroController::getIntroGameMode() const {
-    return introGameMode;
-}
 
 IntroSize IntroController::getIntroSize() const {
     return introSize;
+}
+
+IntroGameMode IntroController::getIntroGameMode()  {
+    return introGameMode;
+}
+
+bool IntroController::isIntromode() const {
+    return intromode;
 }
 

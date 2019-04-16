@@ -15,13 +15,12 @@ class MSSFMLview {
     int square_position_y;
     Minesweeperboard &msb;
     sf::RenderWindow &win;
-public:
-    sf::RenderWindow &getWindow();
+    sf::RenderWindow getWindow();
 
 private:
     std::vector<sf::CircleShape> squareBox;
 public:
-    const std::vector<sf::CircleShape> &getSquareBox() ;
+    const std::vector<sf::CircleShape> getSquareBox() ;
 
 public:
     MSSFMLview(int squarsize,Minesweeperboard &msb,int square_position_x,int square_position_y,sf::RenderWindow &win);

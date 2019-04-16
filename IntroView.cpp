@@ -69,6 +69,10 @@ IntroView::IntroView(sf::RenderWindow &window): window(window) {
     txt_big_size.setPosition(425, 250);
     txt_big_size.setFillColor(sf::Color::Red);
     txt_big_size.setCharacterSize(20);
+
+    text_mode.setFont(font);
+    text_mode.setPosition(600,300);
+    text_mode.setFillColor(sf::Color::Red);
 }
 
 void IntroView::draw(sf::RenderWindow &win) {
@@ -87,6 +91,7 @@ void IntroView::draw(sf::RenderWindow &win) {
     win.draw(txt_normal_size);
     win.draw(rect_big_size);
     win.draw(txt_big_size);
+    win.draw(text_mode);
 }
 
 sf::RenderWindow &IntroView::getWindow() const {

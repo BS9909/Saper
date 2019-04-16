@@ -14,6 +14,9 @@ class GameManager {
         INTRO, GAME, SCORE
     } state;
 
+
+
+private:
     void updateState();
 public:
     GameManager(IntroController &ic, MinesweeperController &mc, ScoreController &sc);

@@ -19,6 +19,8 @@
 int main() {
     srand(time(NULL));
     // Create the main window
+    sf::Event event;
+
     sf::RenderWindow win(sf::VideoMode(800, 600), "Saper");
 
     // generalnie - do kontrolera przekażemy referencje na widok i model, czyli
@@ -27,9 +29,11 @@ int main() {
 
     // fake - zastąpcie Waszą klasą, dodajcie model planszy
     IntroView iv(win);
-    IntroController ic(iv);
+    Minesweeperboard board(9,7, DEBUG);
 
-    Minesweeperboard board(ic);
+    IntroController ic(iv, board);
+
+
     MSSFMLview sfml_view(50.f, board, 0,50,win);
 
     MinesweeperView mv(sfml_view);
@@ -44,7 +48,6 @@ int main() {
     // Start the game loop
     while (win.isOpen()) {
         // Process events
-        sf::Event event;
         while (win.pollEvent(event)) {
             // Close window : exit
             if (event.type == sf::Event::Closed)

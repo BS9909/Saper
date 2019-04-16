@@ -5,6 +5,7 @@
 
 class IntroView {
     sf::RectangleShape rect;
+
 public:
     const sf::RectangleShape &getRect() const;
 
@@ -40,6 +41,8 @@ private:
     sf::Text txt_normal_size;
     sf::Text txt_big_size;
     sf::RenderWindow &window;
+public:
+    sf::Text text_mode;
 public:
     sf::RenderWindow &getWindow() const;
 

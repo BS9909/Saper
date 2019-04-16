@@ -86,9 +86,16 @@ CMakeFiles/Saper0_2.dir/GameManager.cpp.obj: C:/Users/Bartek/SFML-2.5.1/include/
 CMakeFiles/Saper0_2.dir/GameManager.cpp.obj: C:/Users/Bartek/SFML-2.5.1/include/SFML/Window/WindowHandle.hpp
 CMakeFiles/Saper0_2.dir/GameManager.cpp.obj: C:/Users/Bartek/SFML-2.5.1/include/SFML/Window/WindowStyle.hpp
 
+CMakeFiles/Saper0_2.dir/IntroController.cpp.obj: ../GameManager.h
 CMakeFiles/Saper0_2.dir/IntroController.cpp.obj: ../IntroController.cpp
 CMakeFiles/Saper0_2.dir/IntroController.cpp.obj: ../IntroController.h
 CMakeFiles/Saper0_2.dir/IntroController.cpp.obj: ../IntroView.h
+CMakeFiles/Saper0_2.dir/IntroController.cpp.obj: ../MSSFMLview.h
+CMakeFiles/Saper0_2.dir/IntroController.cpp.obj: ../MinesweeperController.h
+CMakeFiles/Saper0_2.dir/IntroController.cpp.obj: ../MinesweeperView.h
+CMakeFiles/Saper0_2.dir/IntroController.cpp.obj: ../Minesweeperboard.h
+CMakeFiles/Saper0_2.dir/IntroController.cpp.obj: ../ScoreController.h
+CMakeFiles/Saper0_2.dir/IntroController.cpp.obj: ../ScoreView.h
 CMakeFiles/Saper0_2.dir/IntroController.cpp.obj: C:/Users/Bartek/SFML-2.5.1/include/SFML/Config.hpp
 CMakeFiles/Saper0_2.dir/IntroController.cpp.obj: C:/Users/Bartek/SFML-2.5.1/include/SFML/Graphics.hpp
 CMakeFiles/Saper0_2.dir/IntroController.cpp.obj: C:/Users/Bartek/SFML-2.5.1/include/SFML/Graphics/BlendMode.hpp
@@ -241,8 +248,6 @@ CMakeFiles/Saper0_2.dir/IntroView.cpp.obj: C:/Users/Bartek/SFML-2.5.1/include/SF
 CMakeFiles/Saper0_2.dir/IntroView.cpp.obj: C:/Users/Bartek/SFML-2.5.1/include/SFML/Window/WindowHandle.hpp
 CMakeFiles/Saper0_2.dir/IntroView.cpp.obj: C:/Users/Bartek/SFML-2.5.1/include/SFML/Window/WindowStyle.hpp
 
-CMakeFiles/Saper0_2.dir/MSBoardTextView.cpp.obj: ../IntroController.h
-CMakeFiles/Saper0_2.dir/MSBoardTextView.cpp.obj: ../IntroView.h
 CMakeFiles/Saper0_2.dir/MSBoardTextView.cpp.obj: ../MSBoardTextView.cpp
 CMakeFiles/Saper0_2.dir/MSBoardTextView.cpp.obj: ../MSBoardTextView.h
 CMakeFiles/Saper0_2.dir/MSBoardTextView.cpp.obj: ../MSTextController.h
@@ -322,8 +327,6 @@ CMakeFiles/Saper0_2.dir/MSBoardTextView.cpp.obj: C:/Users/Bartek/SFML-2.5.1/incl
 CMakeFiles/Saper0_2.dir/MSBoardTextView.cpp.obj: C:/Users/Bartek/SFML-2.5.1/include/SFML/Window/WindowHandle.hpp
 CMakeFiles/Saper0_2.dir/MSBoardTextView.cpp.obj: C:/Users/Bartek/SFML-2.5.1/include/SFML/Window/WindowStyle.hpp
 
-CMakeFiles/Saper0_2.dir/MSSFMLview.cpp.obj: ../IntroController.h
-CMakeFiles/Saper0_2.dir/MSSFMLview.cpp.obj: ../IntroView.h
 CMakeFiles/Saper0_2.dir/MSSFMLview.cpp.obj: ../MSSFMLview.cpp
 CMakeFiles/Saper0_2.dir/MSSFMLview.cpp.obj: ../MSSFMLview.h
 CMakeFiles/Saper0_2.dir/MSSFMLview.cpp.obj: ../Minesweeperboard.h
@@ -402,8 +405,6 @@ CMakeFiles/Saper0_2.dir/MSSFMLview.cpp.obj: C:/Users/Bartek/SFML-2.5.1/include/S
 CMakeFiles/Saper0_2.dir/MSSFMLview.cpp.obj: C:/Users/Bartek/SFML-2.5.1/include/SFML/Window/WindowHandle.hpp
 CMakeFiles/Saper0_2.dir/MSSFMLview.cpp.obj: C:/Users/Bartek/SFML-2.5.1/include/SFML/Window/WindowStyle.hpp
 
-CMakeFiles/Saper0_2.dir/MSTextController.cpp.obj: ../IntroController.h
-CMakeFiles/Saper0_2.dir/MSTextController.cpp.obj: ../IntroView.h
 CMakeFiles/Saper0_2.dir/MSTextController.cpp.obj: ../MSBoardTextView.h
 CMakeFiles/Saper0_2.dir/MSTextController.cpp.obj: ../MSTextController.cpp
 CMakeFiles/Saper0_2.dir/MSTextController.cpp.obj: ../MSTextController.h
@@ -565,8 +566,6 @@ CMakeFiles/Saper0_2.dir/MinesweeperController.cpp.obj: C:/Users/Bartek/SFML-2.5.
 CMakeFiles/Saper0_2.dir/MinesweeperController.cpp.obj: C:/Users/Bartek/SFML-2.5.1/include/SFML/Window/WindowHandle.hpp
 CMakeFiles/Saper0_2.dir/MinesweeperController.cpp.obj: C:/Users/Bartek/SFML-2.5.1/include/SFML/Window/WindowStyle.hpp
 
-CMakeFiles/Saper0_2.dir/MinesweeperView.cpp.obj: ../IntroController.h
-CMakeFiles/Saper0_2.dir/MinesweeperView.cpp.obj: ../IntroView.h
 CMakeFiles/Saper0_2.dir/MinesweeperView.cpp.obj: ../MSSFMLview.h
 CMakeFiles/Saper0_2.dir/MinesweeperView.cpp.obj: ../MinesweeperView.cpp
 CMakeFiles/Saper0_2.dir/MinesweeperView.cpp.obj: ../MinesweeperView.h
@@ -646,12 +645,18 @@ CMakeFiles/Saper0_2.dir/MinesweeperView.cpp.obj: C:/Users/Bartek/SFML-2.5.1/incl
 CMakeFiles/Saper0_2.dir/MinesweeperView.cpp.obj: C:/Users/Bartek/SFML-2.5.1/include/SFML/Window/WindowHandle.hpp
 CMakeFiles/Saper0_2.dir/MinesweeperView.cpp.obj: C:/Users/Bartek/SFML-2.5.1/include/SFML/Window/WindowStyle.hpp
 
+CMakeFiles/Saper0_2.dir/Minesweeperboard.cpp.obj: ../GameManager.h
 CMakeFiles/Saper0_2.dir/Minesweeperboard.cpp.obj: ../IntroController.h
 CMakeFiles/Saper0_2.dir/Minesweeperboard.cpp.obj: ../IntroView.h
 CMakeFiles/Saper0_2.dir/Minesweeperboard.cpp.obj: ../MSBoardTextView.h
+CMakeFiles/Saper0_2.dir/Minesweeperboard.cpp.obj: ../MSSFMLview.h
 CMakeFiles/Saper0_2.dir/Minesweeperboard.cpp.obj: ../MSTextController.h
+CMakeFiles/Saper0_2.dir/Minesweeperboard.cpp.obj: ../MinesweeperController.h
+CMakeFiles/Saper0_2.dir/Minesweeperboard.cpp.obj: ../MinesweeperView.h
 CMakeFiles/Saper0_2.dir/Minesweeperboard.cpp.obj: ../Minesweeperboard.cpp
 CMakeFiles/Saper0_2.dir/Minesweeperboard.cpp.obj: ../Minesweeperboard.h
+CMakeFiles/Saper0_2.dir/Minesweeperboard.cpp.obj: ../ScoreController.h
+CMakeFiles/Saper0_2.dir/Minesweeperboard.cpp.obj: ../ScoreView.h
 CMakeFiles/Saper0_2.dir/Minesweeperboard.cpp.obj: C:/Users/Bartek/SFML-2.5.1/include/SFML/Config.hpp
 CMakeFiles/Saper0_2.dir/Minesweeperboard.cpp.obj: C:/Users/Bartek/SFML-2.5.1/include/SFML/Graphics.hpp
 CMakeFiles/Saper0_2.dir/Minesweeperboard.cpp.obj: C:/Users/Bartek/SFML-2.5.1/include/SFML/Graphics/BlendMode.hpp

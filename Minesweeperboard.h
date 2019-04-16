@@ -5,8 +5,6 @@
 #ifndef SAPER0_2_MINESWEEPERBOARD_H
 #define SAPER0_2_MINESWEEPERBOARD_H
 
-#include "IntroController.h"
-
 
 enum GameMode  { DEBUG, EASY, NORMAL, HARD };
 enum GameState { RUNNING, FINISHED_WIN, FINISHED_LOSS };
@@ -24,7 +22,9 @@ class Minesweeperboard {
     int high;
     bool hasMine(int row, int column)const;
     GameState game_status;
-    IntroController &introController;
+    GameMode mode;
+public:
+    GameMode getMode() const;
 
 private:
     bool firstMove;
@@ -32,7 +32,7 @@ public:
     bool isFirstMove() const;
 
 public:
-    Minesweeperboard(IntroController &introController);
+    Minesweeperboard(int width, int high,GameMode mode);
     void debug_display() const;
     void newMine(int row, int column) ;
     int getBoardWidth()const ;
@@ -45,6 +45,9 @@ public:
     bool isRevealed(int row, int column) const;
     GameState getGameState() const;
     char getFieldInfo(int row, int column)const ;
+    void setColumn(int newColumn){width=newColumn;}
+    void setRow(int newRow){width=newRow;}
+    void setGameMOde(GameMode newGameMode){mode = newGameMode;}
 
 };
 

@@ -24,6 +24,7 @@ void GameManager::updateState() {
 
 void GameManager::handleEvent(sf::Event &event)
 {
+    updateState();
     switch (state) {
         case INTRO:
             introController.handleEvent(event);
@@ -35,7 +36,6 @@ void GameManager::handleEvent(sf::Event &event)
             scoreController.handleEvent(event);
             break;
     }
-    updateState();
 }
 
 void GameManager::draw(sf::RenderWindow &win) {
@@ -52,3 +52,4 @@ void GameManager::draw(sf::RenderWindow &win) {
             break;
     }
 }
+

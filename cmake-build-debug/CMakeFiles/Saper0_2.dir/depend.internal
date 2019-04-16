@@ -87,9 +87,16 @@ CMakeFiles/Saper0_2.dir/GameManager.cpp.obj
  C:/Users/Bartek/SFML-2.5.1/include/SFML/Window/WindowHandle.hpp
  C:/Users/Bartek/SFML-2.5.1/include/SFML/Window/WindowStyle.hpp
 CMakeFiles/Saper0_2.dir/IntroController.cpp.obj
+ C:/Users/Bartek/CLionProjects/Saper0.2/GameManager.h
  C:/Users/Bartek/CLionProjects/Saper0.2/IntroController.cpp
  C:/Users/Bartek/CLionProjects/Saper0.2/IntroController.h
  C:/Users/Bartek/CLionProjects/Saper0.2/IntroView.h
+ C:/Users/Bartek/CLionProjects/Saper0.2/MSSFMLview.h
+ C:/Users/Bartek/CLionProjects/Saper0.2/MinesweeperController.h
+ C:/Users/Bartek/CLionProjects/Saper0.2/MinesweeperView.h
+ C:/Users/Bartek/CLionProjects/Saper0.2/Minesweeperboard.h
+ C:/Users/Bartek/CLionProjects/Saper0.2/ScoreController.h
+ C:/Users/Bartek/CLionProjects/Saper0.2/ScoreView.h
  C:/Users/Bartek/SFML-2.5.1/include/SFML/Config.hpp
  C:/Users/Bartek/SFML-2.5.1/include/SFML/Graphics.hpp
  C:/Users/Bartek/SFML-2.5.1/include/SFML/Graphics/BlendMode.hpp
@@ -242,8 +249,6 @@ CMakeFiles/Saper0_2.dir/IntroView.cpp.obj
  C:/Users/Bartek/SFML-2.5.1/include/SFML/Window/WindowHandle.hpp
  C:/Users/Bartek/SFML-2.5.1/include/SFML/Window/WindowStyle.hpp
 CMakeFiles/Saper0_2.dir/MSBoardTextView.cpp.obj
- C:/Users/Bartek/CLionProjects/Saper0.2/IntroController.h
- C:/Users/Bartek/CLionProjects/Saper0.2/IntroView.h
  C:/Users/Bartek/CLionProjects/Saper0.2/MSBoardTextView.cpp
  C:/Users/Bartek/CLionProjects/Saper0.2/MSBoardTextView.h
  C:/Users/Bartek/CLionProjects/Saper0.2/MSTextController.h
@@ -323,8 +328,6 @@ CMakeFiles/Saper0_2.dir/MSBoardTextView.cpp.obj
  C:/Users/Bartek/SFML-2.5.1/include/SFML/Window/WindowHandle.hpp
  C:/Users/Bartek/SFML-2.5.1/include/SFML/Window/WindowStyle.hpp
 CMakeFiles/Saper0_2.dir/MSSFMLview.cpp.obj
- C:/Users/Bartek/CLionProjects/Saper0.2/IntroController.h
- C:/Users/Bartek/CLionProjects/Saper0.2/IntroView.h
  C:/Users/Bartek/CLionProjects/Saper0.2/MSSFMLview.cpp
  C:/Users/Bartek/CLionProjects/Saper0.2/MSSFMLview.h
  C:/Users/Bartek/CLionProjects/Saper0.2/Minesweeperboard.h
@@ -403,8 +406,6 @@ CMakeFiles/Saper0_2.dir/MSSFMLview.cpp.obj
  C:/Users/Bartek/SFML-2.5.1/include/SFML/Window/WindowHandle.hpp
  C:/Users/Bartek/SFML-2.5.1/include/SFML/Window/WindowStyle.hpp
 CMakeFiles/Saper0_2.dir/MSTextController.cpp.obj
- C:/Users/Bartek/CLionProjects/Saper0.2/IntroController.h
- C:/Users/Bartek/CLionProjects/Saper0.2/IntroView.h
  C:/Users/Bartek/CLionProjects/Saper0.2/MSBoardTextView.h
  C:/Users/Bartek/CLionProjects/Saper0.2/MSTextController.cpp
  C:/Users/Bartek/CLionProjects/Saper0.2/MSTextController.h
@@ -566,8 +567,6 @@ CMakeFiles/Saper0_2.dir/MinesweeperController.cpp.obj
  C:/Users/Bartek/SFML-2.5.1/include/SFML/Window/WindowHandle.hpp
  C:/Users/Bartek/SFML-2.5.1/include/SFML/Window/WindowStyle.hpp
 CMakeFiles/Saper0_2.dir/MinesweeperView.cpp.obj
- C:/Users/Bartek/CLionProjects/Saper0.2/IntroController.h
- C:/Users/Bartek/CLionProjects/Saper0.2/IntroView.h
  C:/Users/Bartek/CLionProjects/Saper0.2/MSSFMLview.h
  C:/Users/Bartek/CLionProjects/Saper0.2/MinesweeperView.cpp
  C:/Users/Bartek/CLionProjects/Saper0.2/MinesweeperView.h
@@ -647,12 +646,18 @@ CMakeFiles/Saper0_2.dir/MinesweeperView.cpp.obj
  C:/Users/Bartek/SFML-2.5.1/include/SFML/Window/WindowHandle.hpp
  C:/Users/Bartek/SFML-2.5.1/include/SFML/Window/WindowStyle.hpp
 CMakeFiles/Saper0_2.dir/Minesweeperboard.cpp.obj
+ C:/Users/Bartek/CLionProjects/Saper0.2/GameManager.h
  C:/Users/Bartek/CLionProjects/Saper0.2/IntroController.h
  C:/Users/Bartek/CLionProjects/Saper0.2/IntroView.h
  C:/Users/Bartek/CLionProjects/Saper0.2/MSBoardTextView.h
+ C:/Users/Bartek/CLionProjects/Saper0.2/MSSFMLview.h
  C:/Users/Bartek/CLionProjects/Saper0.2/MSTextController.h
+ C:/Users/Bartek/CLionProjects/Saper0.2/MinesweeperController.h
+ C:/Users/Bartek/CLionProjects/Saper0.2/MinesweeperView.h
  C:/Users/Bartek/CLionProjects/Saper0.2/Minesweeperboard.cpp
  C:/Users/Bartek/CLionProjects/Saper0.2/Minesweeperboard.h
+ C:/Users/Bartek/CLionProjects/Saper0.2/ScoreController.h
+ C:/Users/Bartek/CLionProjects/Saper0.2/ScoreView.h
  C:/Users/Bartek/SFML-2.5.1/include/SFML/Config.hpp
  C:/Users/Bartek/SFML-2.5.1/include/SFML/Graphics.hpp
  C:/Users/Bartek/SFML-2.5.1/include/SFML/Graphics/BlendMode.hpp

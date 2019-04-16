@@ -2,7 +2,8 @@
 #include <SFML/Graphics.hpp>
 #include <cmath>
 
-MinesweeperController::MinesweeperController(MinesweeperView &v, sf::RenderWindow &win, MSSFMLview &mssfmLview,Minesweeperboard &msb) :view(v),
+MinesweeperController::MinesweeperController(MinesweeperView &v, sf::RenderWindow &win, MSSFMLview &mssfmLview,Minesweeperboard &msb) :
+view(v),
 win(win),
 mssfmLview(mssfmLview),
 msb(msb)
@@ -14,7 +15,6 @@ void MinesweeperController::handleEvent(sf::Event &event) {
         if (event.mouseButton.button == sf::Mouse::Left)
         {
             msb.revealField(0,0); // albo na odwrót - zależnie jak to sobie zdefiniowaliście
-            msb.revealField(0,1);
         }
         else if (event.mouseButton.button == sf::Mouse::Right)
         {

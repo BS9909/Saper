@@ -45,7 +45,7 @@ void MSSFMLview::draw() {
             square.setPosition(square_position_y + i*(squaresize*2)/pow(2, 0.5), square_position_x + j*(squaresize*2)/pow(2, 0.5));
             square.setFillColor(sf::Color::Black);
             square.setOutlineThickness(-1);
-            square.setOutlineColor(sf::Color::Red);;
+            square.setOutlineColor(sf::Color::Red);
             win.draw(square);
             //Trzy ify, ustawiają odpowiednią kolor bądź napis dla wartości zwracanych przez getFieledInfo
             //które nie są liczbą.
@@ -105,11 +105,3 @@ void MSSFMLview::draw() {
         }
     }
 }
-
-sf::RenderWindow &MSSFMLview::getWindow()  {
-    return win;
-}
-const std::vector<sf::CircleShape>& MSSFMLview::getSquareBox() {
-    return squareBox;
-}
-
