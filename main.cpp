@@ -21,7 +21,7 @@ int main() {
     // Create the main window
     sf::Event event;
 
-    sf::RenderWindow win(sf::VideoMode(800, 600), "Saper");
+    sf::RenderWindow win(sf::VideoMode(1000, 800), "Saper");
 
     // generalnie - do kontrolera przekażemy referencje na widok i model, czyli
     // IntroController ic(iv, im);
@@ -29,18 +29,21 @@ int main() {
 
     // fake - zastąpcie Waszą klasą, dodajcie model planszy
     IntroView iv(win);
-    Minesweeperboard board(9,7, DEBUG);
 
-    IntroController ic(iv, board);
+    Minesweeperboard board(9,7,DEBUG);
+
+    MSSFMLview sfml_view(30.f, board, 0,50,win);
+
+    IntroController ic(iv, board, sfml_view);
 
 
-    MSSFMLview sfml_view(50.f, board, 0,50,win);
 
     MinesweeperView mv(sfml_view);
-    MinesweeperController mc(mv, win,sfml_view,board);
 
     // uwagi jak do Intro
     ScoreView sv;
+    MinesweeperController mc(mv, win,board,sv);
+
     ScoreController sc(sv);
 
     GameManager gm(ic, mc, sc);
@@ -73,7 +76,7 @@ int main() {
         // Update the window
         win.display();
     }
-    board.debug_display();
+   // board.debug_display();
 
     return EXIT_SUCCESS;
 }

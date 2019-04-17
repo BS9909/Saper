@@ -9,6 +9,7 @@
 #include <cctype>
 
 #include <SFML/Graphics.hpp>
+#include "Minesweeperboard.h"
 
 MSSFMLview::MSSFMLview(int squarsize, Minesweeperboard &msb,int square_position_x,int square_position_y,sf::RenderWindow &win): msb(msb),
 win(win)
@@ -16,6 +17,13 @@ win(win)
     this->squaresize = squarsize;
     this->square_position_x = square_position_x;
     this->square_position_y = square_position_y;
+}
+void MSSFMLview::setNewParameters(int width, int height, GameMode gameMode) {
+
+    this->columns = width;
+    this->rows = height;
+    this->gameMode = gameMode;
+
 }
 void MSSFMLview::draw() {
     //Ustawiam parametry kwadratów
@@ -39,8 +47,8 @@ void MSSFMLview::draw() {
     //wynika to z innej specyfikacjii funkcjii, getFieled info działa na bazie tablicy dwuwymiarowej która inkrementuje
     //w kolejności najpier po rzad 0->wszystkie kolumny w rzedzie 0->rzad1...
     //square.setPosition działa dokładnie na odwrót przez co należało zamienić parametry pętli.
-    for (int j = 0; j < msb.getBoardHeight(); ++j) {
-        for (int i = 0; i < msb.getBoardWidth(); ++i) {
+    for (int j = 0; j < rows; ++j) {
+        for (int i = 0; i < columns; ++i) {
             //Tworzenie kwadratów i nadawanie im początkowych wartość
             square.setPosition(square_position_y + i*(squaresize*2)/pow(2, 0.5), square_position_x + j*(squaresize*2)/pow(2, 0.5));
             square.setFillColor(sf::Color::Black);

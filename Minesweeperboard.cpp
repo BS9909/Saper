@@ -13,70 +13,61 @@
 #include <iostream>
 
 
-Minesweeperboard::Minesweeperboard(int width, int high, GameMode mode)
-{
-        srand(time(NULL));
-        game_status = RUNNING;
-        firstMove = true;
-        this->mode = mode;
-        this->width = width;
-        this->high = high;
-        double amountsOfMines = 0;
-        int row = 0, column = 0;
-        for (int i = 0; i < high; i++) {//row = i
-            for (int j = 0; j < width; j++) {//column = j
-                board[i][j].hasMine = false;
-                board[i][j].hasFlag = false;
-                board[i][j].isRevealed = false;
+Minesweeperboard::Minesweeperboard(int width, int high, GameMode mode) {
+    srand(time(NULL));
+    game_status = RUNNING;
+    firstMove = true;
+    this->gameMode = mode;
+    this->width = width;
+    this->high = high;
 
-            }
-        }
-//    if(introController.getIntroSize()==intro_small){
-//        width=10;
-//        high=10;
-//    }
-//    if(introController.getIntroSize()==intro_normal){
-//        width=15;
-//        high=20;
-//    }
-//    if(introController.getIntroSize()==intro_big){
-//        width=20;
-//        high=30;
-//    }
+}
+void Minesweeperboard::setNewParameters(int width, int high, GameMode gameMode) {
+    this->width = width;
+    this->high = high;
+    this->gameMode = gameMode;
+    setMines();
+    debug_display();
+}
+void Minesweeperboard::setMines() {
 
-        if (mode = EASY) {
-            amountsOfMines = 0.1 * width * high;
-            for (int i = 0; i < amountsOfMines; i++) {
-                row = rand() % high;
-                column = rand() % width;
-                board[row][column].hasMine = true;
-            }
+    for (int i = 0; i < high; i++) {//row = i
+        for (int j = 0; j < width; j++) {//column = j
+            board[i][j].hasMine = false;
+            board[i][j].hasFlag = false;
+            board[i][j].isRevealed = false;
+
         }
-        if (mode = NORMAL) {
-            amountsOfMines = 0.2 * width * high;
-            for (int i = 0; i < amountsOfMines; i++) {
-                row = rand() % high;
-                column = rand() % width;
-                board[row][column].hasMine = true;
-            }
-        }
-        if (mode = HARD) {
-            amountsOfMines = 0.3 * width * high;
-            for (int i = 0; i < amountsOfMines; i++) {
-                row = rand() % high;
-                column = rand() % width;
-                board[row][column].hasMine = true;
-            }
-        }
-//    if(mode==DEBUG){
-//        for(int i=0; i<width; i++) board[0][i].hasMine = true; //wypelniamy kolumny minami w debug
-//        for(int i=0; i<high; i+=2) board[i][0].hasMine = true; //wypełniamy wiersze minami w debugu
-//        for(int i = 0; i<width && i<high; i++) board[i][i].hasMine = true;
-//    }
     }
-
+    double amountsOfMines=0;
+    int randRow, randColumn;
+    if (gameMode == EASY) {
+        amountsOfMines = 0.1 * high * width;
+        for (int i = 0; i < amountsOfMines; i++) {
+            randRow = rand() % high;
+            randColumn = rand() % width;
+            board[randRow][randColumn].hasMine = true;
+        }
+    }
+    if (gameMode == NORMAL) {
+        amountsOfMines = 0.2 * high * width;
+        for (int i = 0; i < amountsOfMines; i++) {
+            randRow = rand() % high;
+            randColumn = rand() % width;
+            board[randRow][randColumn].hasMine = true;
+        }
+    }
+    if (gameMode == HARD) {
+        amountsOfMines = 0.3 * high * width;
+        for (int i = 0; i < amountsOfMines; i++) {
+            randRow = rand() % high;
+            randColumn = rand() % width;
+            board[randRow][randColumn].hasMine = true;
+        }
+    }
+}
     void Minesweeperboard::debug_display() const {
-        for (int i = 0; i < high; i++) {
+        for (int i = 0; i <high; i++) {
             for (int j = 0; j < width; j++) {
                 if (board[i][j].hasMine) std::cout << "[M";
                 else std::cout << "[.";
@@ -94,78 +85,77 @@ Minesweeperboard::Minesweeperboard(int width, int high, GameMode mode)
     int Minesweeperboard::getBoardHeight() const {
         return high;
     }
-    bool Minesweeperboard::hasMine(int row, int column) const {
-        if (!(row >= 0 && row < high && column >= 0 && column < width)) return false;
-        return board[row][column].hasMine;
-    }
-    int Minesweeperboard::countMinesAround(int row, int column) const {
-        int counter = 0;
-        if (!(row >= 0 && row < high && column >= 0 && column < width)) return -1;
-        for (int i = -1; i < 2; ++i) {
-            for (int j = -1; j < 2; ++j) {
-                if (hasMine(i + row, j + column)) counter++;
-            }
+bool Minesweeperboard ::hasMine(int row, int column) const {
+    if(!(row>=0 && row<high && column>=0 && column<width)) return false;
+    return board[row][column].hasMine;
+}
+int Minesweeperboard::countMinesAround(int row, int column) const {
+    int counter =0;
+    if(!(row>=0 && row < high && column>=0 && column < width)) return -1;
+    for (int i = -1; i < 2; ++i) {
+        for (int j = -1; j < 2; ++j) {
+            if(hasMine(i+row, j+column)) counter++;
         }
-        return counter;
     }
+    return counter;
+}
 
-    bool Minesweeperboard::isRevealed(int row, int column) const {
-        if (board[row][column].isRevealed) return true;
-        return false;
-    }
-    void Minesweeperboard::revealField(int row, int column) {
-        if (!(row >= 0 && row < high && column >= 0 && column < width)) return;
-        if (board[row][column].isRevealed || getGameState() != RUNNING || board[row][column].hasFlag) return;
-        if (board[row][column].hasMine && firstMove) {
-            newMine(row, column);
-            board[row][column].isRevealed = true;
-            firstMove = false;
-            game_status = RUNNING;
-        } else if (board[row][column].hasMine && !firstMove) {
-            board[row][column].isRevealed = true;
-            game_status = FINISHED_LOSS;
-            firstMove = false;
-        } else if (!board[row][column].hasMine && !firstMove) {
-            board[row][column].isRevealed = true;
-            firstMove = false;
-            game_status = RUNNING;
-        } else if (!board[row][column].hasMine && firstMove) {
-            board[row][column].isRevealed = true;
-            firstMove = false;
-            game_status = RUNNING;
-        } else {
-            for (int i = 0; i < getBoardHeight(); ++i) {
-                for (int j = 0; j < getBoardWidth(); ++j) {
-                    firstMove = false;
-                    board[row][column].isRevealed = true;
-                    if (board[i][j].isRevealed && !board[i][j].hasMine) game_status = FINISHED_WIN;
-                }
+bool Minesweeperboard::isRevealed(int row, int column) const {
+    if(board[row][column].isRevealed) return true;
+    return false;
+}
+void Minesweeperboard::revealField(int row, int column) {
+    if(!(row>=0 && row < high && column>=0 && column < width)) return;
+    if(board[row][column].isRevealed || getGameState()!=RUNNING || board[row][column].hasFlag) return;
+    if(board[row][column].hasMine && firstMove){
+        newMine(row,column);
+        board[row][column].isRevealed=true;
+        firstMove=false;
+        game_status = RUNNING;
+    }else if(board[row][column].hasMine && !firstMove){
+        board[row][column].isRevealed=true;
+        game_status = FINISHED_LOSS;
+        firstMove = false;
+    }else if(!board[row][column].hasMine && !firstMove){
+        board[row][column].isRevealed = true;
+        firstMove = false;
+        game_status = RUNNING;
+    }else if(!board[row][column].hasMine && firstMove) {
+        board[row][column].isRevealed = true;
+        firstMove = false;
+        game_status = RUNNING;
+    }else{
+        for (int i = 0; i < getBoardHeight(); ++i) {
+            for (int j = 0; j < getBoardWidth(); ++j) {
+                if(board[i][j].isRevealed && !board[i][j].hasMine) game_status = FINISHED_WIN;
             }
         }
     }
-    bool Minesweeperboard::hasFlag(int row, int column) const {
-        if (!(row >= 0 && row < high && column >= 0 && column < width)) return 0;
-        if (board[row][column].hasFlag) return true;
-        return false;
-    }
-    void Minesweeperboard::toggleFlag(int row, int column) {
-        if (hasFlag(row, column)) board[row][column].hasFlag = false;
-        else if (!hasFlag(row, column)) board[row][column].hasFlag = true;
-    }
-    GameState Minesweeperboard::getGameState() const {
-        return game_status;
-    }
-    char Minesweeperboard::getFieldInfo(int row, int column) const {
-        if (!(row >= 0 && row < high && column >= 0 && column < width)) return '#';
-        if (board[row][column].isRevealed == 0 && board[row][column].hasFlag == 1) return 'F';
-        if (board[row][column].isRevealed == 0 && board[row][column].hasFlag == 0) return '_';
-        if (board[row][column].isRevealed == 1 && board[row][column].hasMine == 1) return 'x';
-        if (board[row][column].isRevealed == 1 && countMinesAround(row, column) == 0) return ' ';
-        if (board[row][column].isRevealed == 1 && countMinesAround(row, column) > 0)
-            return static_cast<char>(countMinesAround(row, column)) + '0'; //jawna konwersja int na char
-        return 0;
-    }
-    void Minesweeperboard::newMine(int row, int column) {
+}
+bool Minesweeperboard::hasFlag(int row, int column) const {
+    if(!(row>=0 && row < high && column>=0 && column < width)) return 0;
+    if(board[row][column].hasFlag) return true;
+    return false;
+}
+void Minesweeperboard::toggleFlag(int row, int column) {
+    if(hasFlag(row,column)) board[row][column].hasFlag = false;
+    else if(!hasFlag(row,column)) board[row][column].hasFlag = true;
+}
+GameState Minesweeperboard::getGameState() const {
+    return game_status;
+}
+char Minesweeperboard::getFieldInfo(int row, int column) const {
+    if(!(row>=0 && row < high && column>=0 && column < width)) return '#';
+    if(board[row][column].isRevealed==0 && board[row][column].hasFlag==1) return  'F';
+    if(board[row][column].isRevealed==0 && board[row][column].hasFlag==0) return  '_';
+    if(board[row][column].isRevealed==1 && board[row][column].hasMine==1) return 'x';
+    if(board[row][column].isRevealed==1 && countMinesAround(row,column)==0) return  ' ';
+    if(board[row][column].isRevealed==1 && countMinesAround(row,column)>0)
+        return static_cast<char>(countMinesAround(row,column))+'0' ; //jawna konwersja int na char
+    return 0;
+}
+
+void Minesweeperboard::newMine(int row, int column) {
         int newRow = 0, newColumn = 0;
         do {
             newRow = rand() % high;
@@ -183,9 +173,6 @@ Minesweeperboard::Minesweeperboard(int width, int high, GameMode mode)
         board[newRow][newColumn].hasMine = true;
     }
 
-GameMode Minesweeperboard::getMode() const {
-    return mode;
-}
 
 
 

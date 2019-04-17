@@ -4,29 +4,28 @@
 #include <SFML/Graphics.hpp>
 #include "IntroView.h"
 #include "Minesweeperboard.h"
-enum IntroGameMode {INTRO_EASY, INTRO_NORMAL, INTRO_HARD};
-enum IntroSize {intro_small, intro_normal, intro_big};
+#include"MSSFMLview.h"
 
+struct sIntroSetting {
+    int column;
+    int row;
+    GameMode gameMode;
+};
 
 
 class IntroController {
     bool finished = false;
     IntroView & view;
-    IntroSize introSize;
-    IntroGameMode introGameMode;
-    bool intromode= false;
     Minesweeperboard &msb;
+    MSSFMLview &mssfmLview;
+    sIntroSetting setting;
 public:
     bool isIntromode() const;
 
-public:
-    IntroGameMode getIntroGameMode() ;
 
-public:
-    IntroSize getIntroSize() const;
     // IntroModel & model;
 public:
-    IntroController(IntroView & view,Minesweeperboard &msb);
+    IntroController(IntroView & view,Minesweeperboard &msb,MSSFMLview &mssfmLview);
 
     void handleEvent(sf::Event &event);
 

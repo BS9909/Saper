@@ -491,6 +491,7 @@ CMakeFiles/Saper0_2.dir/MinesweeperController.cpp.obj: ../MinesweeperController.
 CMakeFiles/Saper0_2.dir/MinesweeperController.cpp.obj: ../MinesweeperController.h
 CMakeFiles/Saper0_2.dir/MinesweeperController.cpp.obj: ../MinesweeperView.h
 CMakeFiles/Saper0_2.dir/MinesweeperController.cpp.obj: ../Minesweeperboard.h
+CMakeFiles/Saper0_2.dir/MinesweeperController.cpp.obj: ../ScoreView.h
 CMakeFiles/Saper0_2.dir/MinesweeperController.cpp.obj: C:/Users/Bartek/SFML-2.5.1/include/SFML/Config.hpp
 CMakeFiles/Saper0_2.dir/MinesweeperController.cpp.obj: C:/Users/Bartek/SFML-2.5.1/include/SFML/Graphics.hpp
 CMakeFiles/Saper0_2.dir/MinesweeperController.cpp.obj: C:/Users/Bartek/SFML-2.5.1/include/SFML/Graphics/BlendMode.hpp

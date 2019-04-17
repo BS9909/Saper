@@ -9,7 +9,6 @@
 enum GameMode  { DEBUG, EASY, NORMAL, HARD };
 enum GameState { RUNNING, FINISHED_WIN, FINISHED_LOSS };
 
-
 struct Fieled{
     bool hasMine;
     bool hasFlag;
@@ -18,11 +17,13 @@ struct Fieled{
 
 class Minesweeperboard {
     Fieled board[100][100];
-    int width;
-    int high;
+    int high,width;
     bool hasMine(int row, int column)const;
     GameState game_status;
-    GameMode mode;
+    GameMode gameMode;
+public:
+    double getAmountsOfMines() const;
+
 public:
     GameMode getMode() const;
 
@@ -34,6 +35,7 @@ public:
 public:
     Minesweeperboard(int width, int high,GameMode mode);
     void debug_display() const;
+    void setMines();
     void newMine(int row, int column) ;
     int getBoardWidth()const ;
     int getBoardHeight()const ;
@@ -47,7 +49,8 @@ public:
     char getFieldInfo(int row, int column)const ;
     void setColumn(int newColumn){width=newColumn;}
     void setRow(int newRow){width=newRow;}
-    void setGameMOde(GameMode newGameMode){mode = newGameMode;}
+    void setGameMode(GameMode newGameMode){gameMode = newGameMode;}
+    void setNewParameters(int width, int height, GameMode gameMode);
 
 };
 
