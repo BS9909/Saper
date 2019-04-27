@@ -14,13 +14,13 @@ scoreView(scoreView)
 void MinesweeperController::handleEvent(sf::Event &event) {
     if (event.type == sf::Event::MouseButtonPressed)
     {
-        div_t wiersz =  div((event.mouseButton.x - mssfmLview.getSquare_position_y()),mssfmLview.getSquaresize());
-        div_t kolumna =  div((event.mouseButton.y-mssfmLview.getSquare_position_x()),mssfmLview.getSquaresize());
-        std::cout<<wiersz.quot<<std::endl;
-        std::cout<<kolumna.quot<<std::endl;
+        int wiersz =  (event.mouseButton.y - mssfmLview.getSquare_position_y())/mssfmLview.getSquaresize();
+        int kolumna =  (event.mouseButton.x-mssfmLview.getSquare_position_x())/mssfmLview.getSquaresize();
+        std::cout<<wiersz<<std::endl;
+        std::cout<<kolumna<<std::endl;
         if (event.mouseButton.button == sf::Mouse::Left)
         {
-            msb.revealField(wiersz.quot, kolumna.quot); // albo na odwrót - zależnie jak to sobie zdefiniowaliście
+            msb.revealField(wiersz-1, kolumna); // albo na odwrót - zależnie jak to sobie zdefiniowaliście
            // albo na odwrót - zależnie jak to sobie zdefiniowaliście
             if(msb.getGameState()==RUNNING)
                 moveCounter++;
@@ -39,7 +39,7 @@ void MinesweeperController::handleEvent(sf::Event &event) {
         }
         else if (event.mouseButton.button == sf::Mouse::Right)
         {
-            msb.toggleFlag(wiersz.quot, kolumna.quot); // albo na odwrót - zależnie jak to sobie zdefiniowaliście
+            msb.toggleFlag(wiersz-1, kolumna); // albo na odwrót - zależnie jak to sobie zdefiniowaliście
         }
     }
 }

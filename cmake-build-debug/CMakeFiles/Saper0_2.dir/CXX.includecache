@@ -6,21 +6,21 @@
 
 #IncludeRegexTransform: 
 
-C:/Users/Bartek/CLionProjects/Saper0.2/MSSFMLview.cpp
-MSSFMLview.h
-C:/Users/Bartek/CLionProjects/Saper0.2/MSSFMLview.h
-Minesweeperboard.h
-C:/Users/Bartek/CLionProjects/Saper0.2/Minesweeperboard.h
-vector
--
-cmath
--
-cctype
--
+C:/Users/Bartek/CLionProjects/Saper0.2/IntroController.h
 SFML/Graphics.hpp
 -
+IntroView.h
+C:/Users/Bartek/CLionProjects/Saper0.2/IntroView.h
 Minesweeperboard.h
 C:/Users/Bartek/CLionProjects/Saper0.2/Minesweeperboard.h
+MSSFMLview.h
+C:/Users/Bartek/CLionProjects/Saper0.2/MSSFMLview.h
+ScoreView.h
+C:/Users/Bartek/CLionProjects/Saper0.2/ScoreView.h
+
+C:/Users/Bartek/CLionProjects/Saper0.2/IntroView.h
+SFML/Graphics.hpp
+-
 
 C:/Users/Bartek/CLionProjects/Saper0.2/MSSFMLview.h
 SFML/Graphics.hpp
@@ -30,7 +30,41 @@ C:/Users/Bartek/CLionProjects/Saper0.2/Minesweeperboard.h
 iostream
 -
 
+C:/Users/Bartek/CLionProjects/Saper0.2/MinesweeperController.cpp
+MinesweeperController.h
+C:/Users/Bartek/CLionProjects/Saper0.2/MinesweeperController.h
+SFML/Graphics.hpp
+-
+cmath
+-
+string
+-
+
+C:/Users/Bartek/CLionProjects/Saper0.2/MinesweeperController.h
+SFML/Graphics.hpp
+-
+MinesweeperView.h
+C:/Users/Bartek/CLionProjects/Saper0.2/MinesweeperView.h
+ScoreView.h
+C:/Users/Bartek/CLionProjects/Saper0.2/ScoreView.h
+Minesweeperboard.h
 C:/Users/Bartek/CLionProjects/Saper0.2/Minesweeperboard.h
+IntroController.h
+C:/Users/Bartek/CLionProjects/Saper0.2/IntroController.h
+
+C:/Users/Bartek/CLionProjects/Saper0.2/MinesweeperView.h
+SFML/Graphics.hpp
+-
+MSSFMLview.h
+C:/Users/Bartek/CLionProjects/Saper0.2/MSSFMLview.h
+
+C:/Users/Bartek/CLionProjects/Saper0.2/Minesweeperboard.h
+
+C:/Users/Bartek/CLionProjects/Saper0.2/ScoreView.h
+SFML/Graphics.hpp
+-
+MSSFMLview.h
+C:/Users/Bartek/CLionProjects/Saper0.2/MSSFMLview.h
 
 C:/Users/Bartek/SFML-2.5.1/include/SFML/Config.hpp
 TargetConditionals.h
