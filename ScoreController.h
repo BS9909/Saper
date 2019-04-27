@@ -3,12 +3,18 @@
 
 #include <SFML/Graphics.hpp>
 #include "ScoreView.h"
+#include "IntroController.h"
+#include "MinesweeperController.h"
+#include "Minesweeperboard.h"
 
 class ScoreController {
     bool finished = false;
     ScoreView & view;
+    IntroController &introController;
+    MinesweeperController &minesweeperController;
+    Minesweeperboard &minesweeperboard;
 public:
-    explicit ScoreController(ScoreView & v);
+    explicit ScoreController(ScoreView & v,IntroController &introController,MinesweeperController &minesweeperController,Minesweeperboard &minesweeperboard);
     void handleEvent(sf::Event &event);
 
     // no need to change this

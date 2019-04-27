@@ -41,10 +41,10 @@ int main() {
     MinesweeperView mv(sfml_view);
 
     // uwagi jak do Intro
-    ScoreView sv(sfml_view);
+    ScoreView sv(win,sfml_view);
     MinesweeperController mc(mv, win,board,sv,sfml_view);
 
-    ScoreController sc(sv);
+    ScoreController sc(sv,ic,mc,board);
 
     GameManager gm(ic, mc, sc);
 

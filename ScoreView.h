@@ -9,12 +9,25 @@ class ScoreView {
     sf::Text revealAmountText;
     sf::Font font;
     MSSFMLview &mssfmLview;
+    sf::RectangleShape play_again;
+    sf::RectangleShape close;
+    sf::Text textPlay;
 public:
-    ScoreView(MSSFMLview &mssfmLview);
+    const sf::Text &getTextPlay() const;
+
+    const sf::Text &getTextClose() const;
+
+private:
+    sf::Text textClose;
+    sf::RenderWindow &renderWindow;
+
+public:
+    ScoreView(sf::RenderWindow &renderWindow,MSSFMLview &mssfmLview);
     void draw(sf::RenderWindow &win);
     void setText(std::string resultString){text.setString(resultString);}
     void setRevealAmountText(std::string revealTExt){revealAmountText.setString("Reveal fieled: " + revealTExt);}
     void setGameStateText(int position_x, int position_y);
+    sf::RenderWindow &getWindow() { return renderWindow; };
 };
 
 

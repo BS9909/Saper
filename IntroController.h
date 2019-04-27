@@ -30,7 +30,7 @@ public:
     // no need to change this
     void draw (sf::RenderWindow & win) { view.draw(win); }
     bool isFinished() const { return finished;}
-
+    void setFinished(bool check_finished){finished = check_finished;}
 };
 
 

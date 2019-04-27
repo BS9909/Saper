@@ -6,6 +6,14 @@
 
 #IncludeRegexTransform: 
 
+C:/Users/Bartek/CLionProjects/Saper0.2/GameManager.h
+IntroController.h
+C:/Users/Bartek/CLionProjects/Saper0.2/IntroController.h
+MinesweeperController.h
+C:/Users/Bartek/CLionProjects/Saper0.2/MinesweeperController.h
+ScoreController.h
+C:/Users/Bartek/CLionProjects/Saper0.2/ScoreController.h
+
 C:/Users/Bartek/CLionProjects/Saper0.2/IntroController.h
 SFML/Graphics.hpp
 -
@@ -22,6 +30,10 @@ C:/Users/Bartek/CLionProjects/Saper0.2/IntroView.h
 SFML/Graphics.hpp
 -
 
+C:/Users/Bartek/CLionProjects/Saper0.2/MSBoardTextView.h
+Minesweeperboard.h
+C:/Users/Bartek/CLionProjects/Saper0.2/Minesweeperboard.h
+
 C:/Users/Bartek/CLionProjects/Saper0.2/MSSFMLview.h
 SFML/Graphics.hpp
 -
@@ -30,15 +42,11 @@ C:/Users/Bartek/CLionProjects/Saper0.2/Minesweeperboard.h
 iostream
 -
 
-C:/Users/Bartek/CLionProjects/Saper0.2/MinesweeperController.cpp
-MinesweeperController.h
-C:/Users/Bartek/CLionProjects/Saper0.2/MinesweeperController.h
-SFML/Graphics.hpp
--
-cmath
--
-string
--
+C:/Users/Bartek/CLionProjects/Saper0.2/MSTextController.h
+MSBoardTextView.h
+C:/Users/Bartek/CLionProjects/Saper0.2/MSBoardTextView.h
+Minesweeperboard.h
+C:/Users/Bartek/CLionProjects/Saper0.2/Minesweeperboard.h
 
 C:/Users/Bartek/CLionProjects/Saper0.2/MinesweeperController.h
 SFML/Graphics.hpp
@@ -58,6 +66,36 @@ SFML/Graphics.hpp
 MSSFMLview.h
 C:/Users/Bartek/CLionProjects/Saper0.2/MSSFMLview.h
 
+C:/Users/Bartek/CLionProjects/Saper0.2/Minesweeperboard.cpp
+Minesweeperboard.h
+C:/Users/Bartek/CLionProjects/Saper0.2/Minesweeperboard.h
+MSTextController.h
+C:/Users/Bartek/CLionProjects/Saper0.2/MSTextController.h
+GameManager.h
+C:/Users/Bartek/CLionProjects/Saper0.2/GameManager.h
+cstdlib
+-
+ctime
+-
+string
+-
+cmath
+-
+iostream
+-
+
+C:/Users/Bartek/CLionProjects/Saper0.2/Minesweeperboard.h
+
+C:/Users/Bartek/CLionProjects/Saper0.2/ScoreController.h
+SFML/Graphics.hpp
+-
+ScoreView.h
+C:/Users/Bartek/CLionProjects/Saper0.2/ScoreView.h
+IntroController.h
+C:/Users/Bartek/CLionProjects/Saper0.2/IntroController.h
+MinesweeperController.h
+C:/Users/Bartek/CLionProjects/Saper0.2/MinesweeperController.h
+Minesweeperboard.h
 C:/Users/Bartek/CLionProjects/Saper0.2/Minesweeperboard.h
 
 C:/Users/Bartek/CLionProjects/Saper0.2/ScoreView.h

@@ -20,7 +20,7 @@ void MinesweeperController::handleEvent(sf::Event &event) {
         std::cout<<kolumna<<std::endl;
         if (event.mouseButton.button == sf::Mouse::Left)
         {
-            msb.revealField(wiersz-1, kolumna); // albo na odwrót - zależnie jak to sobie zdefiniowaliście
+            msb.revealField(wiersz, kolumna); // albo na odwrót - zależnie jak to sobie zdefiniowaliście
            // albo na odwrót - zależnie jak to sobie zdefiniowaliście
             if(msb.getGameState()==RUNNING)
                 moveCounter++;

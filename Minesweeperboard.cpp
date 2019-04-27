@@ -20,7 +20,6 @@ Minesweeperboard::Minesweeperboard(int width, int high, GameMode mode) {
     this->gameMode = mode;
     this->width = width;
     this->high = high;
-
 }
 void Minesweeperboard::setNewParameters(int width, int high, GameMode gameMode) {
     this->width = width;
@@ -172,8 +171,18 @@ void Minesweeperboard::newMine(int row, int column) {
         board[row][column].hasMine = false;
         board[newRow][newColumn].hasMine = true;
     }
+    void Minesweeperboard::newGame() {
+        game_status = RUNNING;
+        firstMove = true;
+        for (int i = 0; i < high; i++) {//row = i
+            for (int j = 0; j < width; j++) {//column = j
+                board[i][j].hasMine = false;
+                board[i][j].hasFlag = false;
+                board[i][j].isRevealed = false;
 
-
+            }
+        }
+}
 
 
 

@@ -51,7 +51,7 @@ public:
     void setRow(int newRow){width=newRow;}
     void setGameMode(GameMode newGameMode){gameMode = newGameMode;}
     void setNewParameters(int width, int height, GameMode gameMode);
-
+    void newGame();
 };
 
 

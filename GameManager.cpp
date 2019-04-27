@@ -17,7 +17,8 @@ void GameManager::updateState() {
                 state = SCORE;
             break;
         case SCORE:
-            // oops - tu powinniśmy jakoś zamknąć aplikację
+            if(!introController.isFinished())
+                state = INTRO;
             break;
     }
 }

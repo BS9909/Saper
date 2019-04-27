@@ -733,7 +733,11 @@ CMakeFiles/Saper0_2.dir/Minesweeperboard.cpp.obj: C:/Users/Bartek/SFML-2.5.1/inc
 CMakeFiles/Saper0_2.dir/Minesweeperboard.cpp.obj: C:/Users/Bartek/SFML-2.5.1/include/SFML/Window/WindowHandle.hpp
 CMakeFiles/Saper0_2.dir/Minesweeperboard.cpp.obj: C:/Users/Bartek/SFML-2.5.1/include/SFML/Window/WindowStyle.hpp
 
+CMakeFiles/Saper0_2.dir/ScoreController.cpp.obj: ../IntroController.h
+CMakeFiles/Saper0_2.dir/ScoreController.cpp.obj: ../IntroView.h
 CMakeFiles/Saper0_2.dir/ScoreController.cpp.obj: ../MSSFMLview.h
+CMakeFiles/Saper0_2.dir/ScoreController.cpp.obj: ../MinesweeperController.h
+CMakeFiles/Saper0_2.dir/ScoreController.cpp.obj: ../MinesweeperView.h
 CMakeFiles/Saper0_2.dir/ScoreController.cpp.obj: ../Minesweeperboard.h
 CMakeFiles/Saper0_2.dir/ScoreController.cpp.obj: ../ScoreController.cpp
 CMakeFiles/Saper0_2.dir/ScoreController.cpp.obj: ../ScoreController.h

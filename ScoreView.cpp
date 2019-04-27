@@ -1,6 +1,9 @@
 #include "ScoreView.h"
 
-ScoreView::ScoreView(MSSFMLview &mssfmLview): mssfmLview(mssfmLview) {
+
+ScoreView::ScoreView(sf::RenderWindow &renderWindow,MSSFMLview &mssfmLview):
+    renderWindow(renderWindow),
+    mssfmLview(mssfmLview) {
     if (!font.loadFromFile("arial.ttf")) {
         abort();
     }
@@ -18,10 +21,41 @@ ScoreView::ScoreView(MSSFMLview &mssfmLview): mssfmLview(mssfmLview) {
     revealAmountText.setOutlineColor(sf::Color::Blue);
     revealAmountText.setPosition(0,0);
 
+    play_again.setPosition(430, 700);
+    play_again.setFillColor(sf::Color::Green);
+    play_again.setSize(sf::Vector2f(100,100));
+    textPlay.setFont(font);
+    textPlay.setString("Play Again");
+    textPlay.setCharacterSize(15);
+    textPlay.setFillColor(sf::Color::Black);
+    textPlay.setPosition(450,720);
+
+    close.setPosition(550,700);
+    close.setFillColor(sf::Color::Red);
+    close.setSize(sf::Vector2f(100,100));
+    textClose.setFont(font);
+    textClose.setString("Close");
+    textClose.setCharacterSize(15);
+    textClose.setFillColor(sf::Color::Black);
+    textClose.setPosition(570,720);
+
 }
 
 void ScoreView::draw(sf::RenderWindow &win) {
     win.draw(revealAmountText);
     win.draw(text);
+    win.draw(play_again);
+    win.draw(textPlay);
+    win.draw(close);
+    win.draw(textClose);
     mssfmLview.draw();
+
+}
+
+const sf::Text &ScoreView::getTextPlay() const {
+    return textPlay;
+}
+
+const sf::Text &ScoreView::getTextClose() const {
+    return textClose;
 }
