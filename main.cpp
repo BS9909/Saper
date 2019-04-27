@@ -21,7 +21,7 @@ int main() {
     // Create the main window
     sf::Event event;
 
-    sf::RenderWindow win(sf::VideoMode(1000, 800), "Saper");
+    sf::RenderWindow win(sf::VideoMode(900, 800), "Saper");
 
     // generalnie - do kontrolera przekażemy referencje na widok i model, czyli
     // IntroController ic(iv, im);
@@ -32,7 +32,7 @@ int main() {
 
     Minesweeperboard board(9,7,DEBUG);
 
-    MSSFMLview sfml_view(30.f, board, 0,50,win);
+    MSSFMLview sfml_view(20.f, board,50,50,win);
 
     IntroController ic(iv, board, sfml_view);
 
@@ -41,8 +41,8 @@ int main() {
     MinesweeperView mv(sfml_view);
 
     // uwagi jak do Intro
-    ScoreView sv;
-    MinesweeperController mc(mv, win,board,sv);
+    ScoreView sv(sfml_view);
+    MinesweeperController mc(mv, win,board,sv,sfml_view);
 
     ScoreController sc(sv);
 

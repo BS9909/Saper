@@ -19,7 +19,7 @@ class MinesweeperController {
     int moveCounter;
     // ... & model;
 public:
-    MinesweeperController(MinesweeperView & v, sf::RenderWindow &win,Minesweeperboard &msb, ScoreView &scoreView);
+    MinesweeperController(MinesweeperView & v, sf::RenderWindow &win,Minesweeperboard &msb, ScoreView &scoreView,MSSFMLview &mssfmLview);
     void handleEvent(sf::Event &event);
 
     // no need to change this

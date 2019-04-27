@@ -70,9 +70,41 @@ IntroView::IntroView(sf::RenderWindow &window): window(window) {
     txt_big_size.setFillColor(sf::Color::Red);
     txt_big_size.setCharacterSize(20);
 
+    dane.setFont(font);
+    dane.setString("Bartosz Sochacki");
+    dane.setPosition(700, 700);
+    dane.setFillColor(sf::Color::Red);
+    dane.setCharacterSize(20);
+
+    album.setFont(font);
+    album.setString("Nr. albumu: 249485");
+    album.setPosition(700, 725);
+    album.setFillColor(sf::Color::Red);
+    album.setCharacterSize(20);
+
+    grupa.setFont(font);
+    grupa.setString("Wtorek 15:15");
+    grupa.setPosition(700, 750);
+    grupa.setFillColor(sf::Color::Red);
+    grupa.setCharacterSize(20);
+
     text_mode.setFont(font);
     text_mode.setPosition(600,300);
     text_mode.setFillColor(sf::Color::Red);
+
+    setModeText.setFont(font);
+    setModeText.setPosition(175, 400);
+    setModeText.setFillColor(sf::Color::Blue);
+    setModeText.setCharacterSize(50);
+    setModeText.setOutlineThickness(2);
+    setModeText.setOutlineColor(sf::Color::Yellow);
+
+    setSizeText.setFont(font);
+    setSizeText.setPosition(175, 450);
+    setSizeText.setFillColor(sf::Color::Blue);
+    setSizeText.setCharacterSize(75);
+    setSizeText.setOutlineThickness(2);
+    setSizeText.setOutlineColor(sf::Color::Yellow);
 }
 
 void IntroView::draw(sf::RenderWindow &win) {
@@ -92,6 +124,11 @@ void IntroView::draw(sf::RenderWindow &win) {
     win.draw(rect_big_size);
     win.draw(txt_big_size);
     win.draw(text_mode);
+    win.draw(dane);
+    win.draw(album);
+    win.draw(grupa);
+    win.draw(setModeText);
+    win.draw(setSizeText);
 }
 
 sf::RenderWindow &IntroView::getWindow() const {

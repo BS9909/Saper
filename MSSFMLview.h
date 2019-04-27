@@ -12,22 +12,26 @@
 class MSSFMLview {
     int squaresize;
     int square_position_x;
+public:
+    int getSquaresize() const;
+
+    int getSquare_position_x() const;
+
+    int getSquare_position_y() const;
+
+private:
     int square_position_y;
     int rows, columns;
+public:
+    int getColumns() const;
+
+private:
     Minesweeperboard &msb;
     GameMode  gameMode;
     sf::RenderWindow &win;
-    sf::RenderWindow getWindow();
-
-private:
-    std::vector<sf::CircleShape> squareBox;
-public:
-    const std::vector<sf::CircleShape> getSquareBox() ;
 
 public:
     MSSFMLview(int squarsize,Minesweeperboard &msb,int square_position_x,int square_position_y,sf::RenderWindow &win);
-    void eventsController() const;
-
     void draw();
     void setRows(int newRows){rows=newRows;}
     void setColumns(int newColumns){columns=newColumns;}

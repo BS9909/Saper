@@ -16,14 +16,13 @@ win(win)
 {
     this->squaresize = squarsize;
     this->square_position_x = square_position_x;
-    this->square_position_y = square_position_y;
+   this->square_position_y = square_position_y;
 }
 void MSSFMLview::setNewParameters(int width, int height, GameMode gameMode) {
 
     this->columns = width;
     this->rows = height;
     this->gameMode = gameMode;
-
 }
 void MSSFMLview::draw() {
     //Ustawiam parametry kwadratów
@@ -112,4 +111,20 @@ void MSSFMLview::draw() {
 
         }
     }
+}
+
+int MSSFMLview::getColumns() const {
+    return columns;
+}
+
+int MSSFMLview::getSquaresize() const {
+    return squaresize;
+}
+
+int MSSFMLview::getSquare_position_x() const {
+    return square_position_x;
+}
+
+int MSSFMLview::getSquare_position_y() const {
+    return square_position_y;
 }

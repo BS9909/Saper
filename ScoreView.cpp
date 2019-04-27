@@ -1,26 +1,27 @@
 #include "ScoreView.h"
 
-ScoreView::ScoreView() {
+ScoreView::ScoreView(MSSFMLview &mssfmLview): mssfmLview(mssfmLview) {
     if (!font.loadFromFile("arial.ttf")) {
         abort();
     }
-    rect.setSize(sf::Vector2f(550, 100));
-    rect.setPosition(100, 200);
-    rect.setFillColor(sf::Color::Blue);
-    text.setPosition(100,200);
+    text.setPosition(0,700);
     text.setFont(font);
-    text.setFillColor(sf::Color::Black);
-    text.setCharacterSize(50);
+    text.setFillColor(sf::Color::Blue);
+    text.setCharacterSize(100);
+    text.setOutlineThickness(25);
+    text.setFillColor(sf::Color::Yellow);
 
     revealAmountText.setFont(font);
-    revealAmountText.setCharacterSize(20);
-    revealAmountText.setFillColor(sf::Color::Blue);
+    revealAmountText.setCharacterSize(30);
+    revealAmountText.setFillColor(sf::Color::Yellow);
+    revealAmountText.setOutlineThickness(2);
+    revealAmountText.setOutlineColor(sf::Color::Blue);
     revealAmountText.setPosition(0,0);
 
 }
 
 void ScoreView::draw(sf::RenderWindow &win) {
-    win.draw(rect);
     win.draw(revealAmountText);
     win.draw(text);
+    mssfmLview.draw();
 }

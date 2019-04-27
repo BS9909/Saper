@@ -33,6 +33,9 @@ public:
 
 private:
     sf::Text txt;
+    sf::Text dane;
+    sf::Text album;
+    sf::Text grupa;
     sf::Text txt_easy;
     sf::Text txt_normal;
     sf::Text txt_hard;
@@ -41,6 +44,8 @@ private:
     sf::Text txt_normal_size;
     sf::Text txt_big_size;
     sf::RenderWindow &window;
+    sf::Text setModeText;
+    sf::Text setSizeText;
 public:
     sf::Text text_mode;
 public:
@@ -48,9 +53,9 @@ public:
 
 public:
     IntroView(sf::RenderWindow &window);
-
-
     void draw(sf::RenderWindow &win);
+    void setTextMode(std::string textMode){setModeText.setString(textMode);}
+    void setTextSize(std::string textSize){setSizeText.setString(textSize);}
 };
 
 

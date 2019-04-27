@@ -5,6 +5,7 @@
 #include "IntroView.h"
 #include "Minesweeperboard.h"
 #include"MSSFMLview.h"
+#include "ScoreView.h"
 
 struct sIntroSetting {
     int column;
@@ -19,9 +20,6 @@ class IntroController {
     Minesweeperboard &msb;
     MSSFMLview &mssfmLview;
     sIntroSetting setting;
-public:
-    bool isIntromode() const;
-
 
     // IntroModel & model;
 public:
