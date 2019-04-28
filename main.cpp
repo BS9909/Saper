@@ -31,8 +31,8 @@ int main() {
     IntroView iv(win);
 
     Minesweeperboard board(9,7,DEBUG);
-
-    MSSFMLview sfml_view(20.f, board,50,50,win);
+    board.revealField(0,0);
+    MSSFMLview sfml_view(20, board,50,50,win);
 
     IntroController ic(iv, board, sfml_view);
 

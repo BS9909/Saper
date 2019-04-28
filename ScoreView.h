@@ -9,6 +9,12 @@ class ScoreView {
     sf::Text revealAmountText;
     sf::Font font;
     MSSFMLview &mssfmLview;
+public:
+    const sf::RectangleShape &getPlay_again() const;
+
+    const sf::RectangleShape &getClose() const;
+
+private:
     sf::RectangleShape play_again;
     sf::RectangleShape close;
     sf::Text textPlay;

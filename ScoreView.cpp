@@ -59,3 +59,11 @@ const sf::Text &ScoreView::getTextPlay() const {
 const sf::Text &ScoreView::getTextClose() const {
     return textClose;
 }
+
+const sf::RectangleShape &ScoreView::getPlay_again() const {
+    return play_again;
+}
+
+const sf::RectangleShape &ScoreView::getClose() const {
+    return close;
+}

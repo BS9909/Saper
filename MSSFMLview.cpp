@@ -26,8 +26,8 @@ void MSSFMLview::setNewParameters(int width, int height, GameMode gameMode) {
 }
 void MSSFMLview::draw() {
     //Ustawiam parametry kwadratów
-    sf::CircleShape square(squaresize,4);
-    square.rotate(45);
+    int x=20,y=20;
+    sf::RectangleShape square(sf::Vector2f(squaresize, squaresize));
     //Ustawiam czcionke
     sf::Font font;
     font.loadFromFile("arial.ttf");
@@ -49,7 +49,7 @@ void MSSFMLview::draw() {
     for (int j = 0; j < rows; ++j) {
         for (int i = 0; i < columns; ++i) {
             //Tworzenie kwadratów i nadawanie im początkowych wartość
-            square.setPosition(square_position_y + i*(squaresize*2)/pow(2, 0.5), square_position_x + j*(squaresize*2)/pow(2, 0.5));
+            square.setPosition(square_position_y+(y*i), square_position_x+(x*j));
             square.setFillColor(sf::Color::Black);
             square.setOutlineThickness(-1);
             square.setOutlineColor(sf::Color::Red);
@@ -65,7 +65,7 @@ void MSSFMLview::draw() {
                 win.draw(square);
             }
             if(msb.getFieldInfo(j,i)==' '){
-                text.setPosition(square_position_y-10+i*sqrt(2)*squaresize,square_position_x+j*sqrt(2)*squaresize+0.8*squaresize);
+                text.setPosition(square_position_y+i*squaresize+5,square_position_x+j*squaresize-4);
                 text.setString("0");
                 win.draw(text);
             }
@@ -73,36 +73,36 @@ void MSSFMLview::draw() {
             if(isdigit(msb.getFieldInfo(j,i))){
                 switch (msb.getFieldInfo(j,i)){
                     case '1': text.setString("1");
-                        text.setPosition(square_position_y-10+i*sqrt(2)*squaresize,square_position_x+j*sqrt(2)*squaresize+0.8*squaresize);
+                        text.setPosition(square_position_y+i*squaresize+5,square_position_x+j*squaresize-4);
                         win.draw(text);
                         win.draw(text);
                         break;
                     case '2': text.setString("2");
-                        text.setPosition(square_position_y-10+i*sqrt(2)*squaresize,square_position_x+j*sqrt(2)*squaresize+0.8*squaresize);
+                        text.setPosition(square_position_y+i*squaresize+5,square_position_x+j*squaresize-4);
                         win.draw(text);
                         break;
                     case '3': text.setString("3");
-                        text.setPosition(square_position_y-10+i*sqrt(2)*squaresize,square_position_x+j*sqrt(2)*squaresize+0.8*squaresize);
+                        text.setPosition(square_position_y+i*squaresize+5,square_position_x+j*squaresize-4);
                         win.draw(text);
                         break;
                     case '4': text.setString("4");
-                        text.setPosition(square_position_y-10+i*sqrt(2)*squaresize,square_position_x+j*sqrt(2)*squaresize+0.8*squaresize);
+                        text.setPosition(square_position_y+i*squaresize+5,square_position_x+j*squaresize-4);
                         win.draw(text);
                         break;
                     case '5': text.setString("5");
-                        text.setPosition(square_position_y-10+i*sqrt(2)*squaresize,square_position_x+j*sqrt(2)*squaresize+0.8*squaresize);
+                        text.setPosition(square_position_y+i*squaresize+5,square_position_x+j*squaresize-4);
                         win.draw(text);
                         break;
                     case '6': text.setString("6");
-                        text.setPosition(square_position_y-10+i*sqrt(2)*squaresize,square_position_x+j*sqrt(2)*squaresize+0.8*squaresize);
+                        text.setPosition(square_position_y+i*squaresize+5,square_position_x+j*squaresize-4);
                         win.draw(text);
                         break;
                     case '7': text.setString("7");
-                        text.setPosition(square_position_y-10+i*sqrt(2)*squaresize,square_position_x+j*sqrt(2)*squaresize+0.8*squaresize);
+                        text.setPosition(square_position_y+i*squaresize+5,square_position_x+j*squaresize-4);
                         win.draw(text);
                         break;
                     case '8': text.setString("8");
-                        text.setPosition(square_position_y-10+i*sqrt(2)*squaresize,square_position_x+j*sqrt(2)*squaresize+0.8*squaresize);
+                        text.setPosition(square_position_y+i*squaresize+5,square_position_x+j*squaresize-4);
                         win.draw(text);
                         break;
 

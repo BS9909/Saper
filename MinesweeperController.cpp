@@ -14,8 +14,8 @@ scoreView(scoreView)
 void MinesweeperController::handleEvent(sf::Event &event) {
     if (event.type == sf::Event::MouseButtonPressed)
     {
-        int wiersz =  (event.mouseButton.y - mssfmLview.getSquare_position_y())/mssfmLview.getSquaresize();
-        int kolumna =  (event.mouseButton.x-mssfmLview.getSquare_position_x())/mssfmLview.getSquaresize();
+        int wiersz =  (sf::Mouse::getPosition(win).y - mssfmLview.getSquare_position_y())/mssfmLview.getSquaresize();
+        int kolumna =  (sf::Mouse::getPosition(win).x - mssfmLview.getSquare_position_x())/mssfmLview.getSquaresize();
         std::cout<<wiersz<<std::endl;
         std::cout<<kolumna<<std::endl;
         if (event.mouseButton.button == sf::Mouse::Left)
@@ -39,7 +39,7 @@ void MinesweeperController::handleEvent(sf::Event &event) {
         }
         else if (event.mouseButton.button == sf::Mouse::Right)
         {
-            msb.toggleFlag(wiersz-1, kolumna); // albo na odwrót - zależnie jak to sobie zdefiniowaliście
+            msb.toggleFlag(wiersz, kolumna); // albo na odwrót - zależnie jak to sobie zdefiniowaliście
         }
     }
 }

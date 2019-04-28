@@ -27,6 +27,7 @@ public:
     bool isFinished() const { return finished;}
     void setFinished(bool checkFinished){finished = checkFinished;}
     int getMoveCounter() { return moveCounter;}
+    void resetMoveCounter(){moveCounter = 0;}
 };
 
 

@@ -13,30 +13,17 @@
   <component name="ChangeListManager">
     <list default="true" id="5a740dd4-fa41-48ec-a10c-f2a3bcaddd0a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GameManager.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/GameManager.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IntroController.h" beforeDir="false" afterPath="$PROJECT_DIR$/IntroController.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MSTextController.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/MSTextController.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MSSFMLview.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/MSSFMLview.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MinesweeperController.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/MinesweeperController.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MinesweeperController.h" beforeDir="false" afterPath="$PROJECT_DIR$/MinesweeperController.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Minesweeperboard.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Minesweeperboard.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Minesweeperboard.h" beforeDir="false" afterPath="$PROJECT_DIR$/Minesweeperboard.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ScoreController.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/ScoreController.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ScoreController.h" beforeDir="false" afterPath="$PROJECT_DIR$/ScoreController.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ScoreView.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/ScoreView.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ScoreView.h" beforeDir="false" afterPath="$PROJECT_DIR$/ScoreView.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Saper0_2.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Saper0_2.dir/CXX.includecache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Saper0_2.dir/GameManager.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Saper0_2.dir/GameManager.cpp.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Saper0_2.dir/IntroController.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Saper0_2.dir/IntroController.cpp.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Saper0_2.dir/MSBoardTextView.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Saper0_2.dir/MSBoardTextView.cpp.obj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Saper0_2.dir/MSSFMLview.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Saper0_2.dir/MSSFMLview.cpp.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Saper0_2.dir/MSTextController.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Saper0_2.dir/MSTextController.cpp.obj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Saper0_2.dir/MinesweeperController.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Saper0_2.dir/MinesweeperController.cpp.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Saper0_2.dir/MinesweeperView.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Saper0_2.dir/MinesweeperView.cpp.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Saper0_2.dir/Minesweeperboard.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Saper0_2.dir/Minesweeperboard.cpp.obj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Saper0_2.dir/ScoreController.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Saper0_2.dir/ScoreController.cpp.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Saper0_2.dir/ScoreView.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Saper0_2.dir/ScoreView.cpp.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Saper0_2.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Saper0_2.dir/depend.internal" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Saper0_2.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Saper0_2.dir/depend.make" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Saper0_2.dir/main.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Saper0_2.dir/main.cpp.obj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Saper0_2.dir/objects.a" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Saper0_2.dir/objects.a" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/Saper0_2.exe" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Saper0_2.exe" afterDir="false" />
@@ -55,8 +42,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/main.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-73">
-              <caret line="46" column="37" selection-start-line="46" selection-start-column="37" selection-end-line="46" selection-end-column="37" />
+            <state relative-caret-position="99">
+              <caret line="34" column="26" selection-start-line="34" selection-start-column="26" selection-end-line="34" selection-end-column="26" />
               <folding>
                 <element signature="e#0#28#0" expanded="true" />
               </folding>
@@ -67,50 +54,74 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/GameManager.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-76">
-              <caret line="20" column="30" selection-start-line="20" selection-start-column="30" selection-end-line="20" selection-end-column="30" />
+            <state relative-caret-position="442">
+              <caret line="26" column="1" selection-start-line="26" selection-start-column="1" selection-end-line="26" selection-end-column="1" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/IntroController.h">
+        <entry file="file://$PROJECT_DIR$/MinesweeperController.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="544">
-              <caret line="32" column="69" selection-start-line="32" selection-start-column="69" selection-end-line="32" selection-end-column="69" />
+            <state relative-caret-position="493">
+              <caret line="29" column="44" selection-start-line="29" selection-start-column="44" selection-end-line="29" selection-end-column="44" />
               <folding>
-                <element signature="e#53#81#0" expanded="true" />
+                <element signature="e#65#93#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/MinesweeperController.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="501">
+              <caret line="41" column="33" selection-start-line="41" selection-start-column="33" selection-end-line="41" selection-end-column="33" />
+              <folding>
+                <element signature="e#0#34#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/MSSFMLview.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="867">
+              <caret line="51" column="48" selection-start-line="51" selection-start-column="48" selection-end-line="51" selection-end-column="48" />
+              <folding>
+                <element signature="e#43#66#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Minesweeperboard.cpp">
+        <entry file="file://$PROJECT_DIR$/ScoreController.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2814">
-              <caret line="175" column="25" selection-start-line="175" selection-start-column="25" selection-end-line="175" selection-end-column="25" />
+            <state relative-caret-position="187">
+              <caret line="11" column="23" selection-start-line="11" selection-start-column="23" selection-end-line="11" selection-end-column="23" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ScoreView.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="213">
+              <caret line="18" column="29" lean-forward="true" selection-start-line="18" selection-start-column="29" selection-end-line="18" selection-end-column="29" />
               <folding>
-                <element signature="e#44#73#0" expanded="true" />
+                <element signature="e#41#69#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Minesweeperboard.h">
+        <entry file="file://$PROJECT_DIR$/ScoreView.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="298">
-              <caret line="53" column="19" selection-start-line="53" selection-start-column="19" selection-end-line="53" selection-end-column="19" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ScoreController.cpp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="16" column="66" lean-forward="true" selection-start-line="16" selection-start-column="66" selection-end-line="16" selection-end-column="66" />
+            <state relative-caret-position="451">
+              <caret line="63" column="4" selection-start-line="63" selection-start-column="4" selection-end-line="63" selection-end-column="22" />
             </state>
           </provider>
         </entry>
@@ -130,8 +141,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ScoreController.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="16" column="155" selection-start-line="16" selection-start-column="155" selection-end-line="16" selection-end-column="155" />
+            <state relative-caret-position="221">
+              <caret line="13" column="49" selection-start-line="13" selection-start-column="49" selection-end-line="13" selection-end-column="49" />
               <folding>
                 <element signature="e#53#81#0" expanded="true" />
               </folding>
@@ -171,19 +182,19 @@
         <option value="$PROJECT_DIR$/IntroView.h" />
         <option value="$PROJECT_DIR$/IntroView.cpp" />
         <option value="$PROJECT_DIR$/IntroController.cpp" />
-        <option value="$PROJECT_DIR$/MSSFMLview.cpp" />
-        <option value="$PROJECT_DIR$/MinesweeperController.cpp" />
         <option value="$PROJECT_DIR$/MSTextController.cpp" />
         <option value="$PROJECT_DIR$/ScoreView.h" />
-        <option value="$PROJECT_DIR$/ScoreView.cpp" />
         <option value="$PROJECT_DIR$/IntroController.h" />
-        <option value="$PROJECT_DIR$/MinesweeperController.h" />
         <option value="$PROJECT_DIR$/ScoreController.h" />
-        <option value="$PROJECT_DIR$/main.cpp" />
         <option value="$PROJECT_DIR$/Minesweeperboard.h" />
-        <option value="$PROJECT_DIR$/ScoreController.cpp" />
-        <option value="$PROJECT_DIR$/GameManager.cpp" />
         <option value="$PROJECT_DIR$/Minesweeperboard.cpp" />
+        <option value="$PROJECT_DIR$/MinesweeperController.h" />
+        <option value="$PROJECT_DIR$/GameManager.cpp" />
+        <option value="$PROJECT_DIR$/MSSFMLview.cpp" />
+        <option value="$PROJECT_DIR$/MinesweeperController.cpp" />
+        <option value="$PROJECT_DIR$/main.cpp" />
+        <option value="$PROJECT_DIR$/ScoreView.cpp" />
+        <option value="$PROJECT_DIR$/ScoreController.cpp" />
       </list>
     </option>
   </component>
@@ -390,29 +401,34 @@
       <workItem from="1556383997492" duration="1779000" />
       <workItem from="1556385814468" duration="1776000" />
       <workItem from="1556387624965" duration="1777000" />
-      <workItem from="1556389437345" duration="1336000" />
+      <workItem from="1556389437345" duration="1605000" />
+      <workItem from="1556445674883" duration="831000" />
+      <workItem from="1556460151050" duration="1328000" />
+      <workItem from="1556463145744" duration="1779000" />
+      <workItem from="1556465225253" duration="1090000" />
+      <workItem from="1556467350078" duration="1570000" />
+      <workItem from="1556469167068" duration="862000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="238756000" />
+    <option name="totallyTimeSpent" value="246485000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49895614" visible="true" weight="0.20890689" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49895614" visible="true" weight="0.15465587" />
       <window_info id="Structure" order="1" sideWeight="0.50104386" side_tool="true" weight="0.22753036" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3285968" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49959514" visible="true" weight="0.053285968" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49959514" weight="0.053285968" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.589698" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Database Changes" order="7" />
-      <window_info anchor="bottom" id="Messages" order="8" sideWeight="0.49959514" weight="0.21669628" />
+      <window_info anchor="bottom" id="Messages" order="8" sideWeight="0.49959514" weight="0.38365898" />
       <window_info anchor="bottom" id="Terminal" order="9" weight="0.14209591" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50040483" side_tool="true" weight="0.4884547" />
       <window_info anchor="bottom" id="Version Control" order="11" sideWeight="0.49959514" weight="0.19182949" />
@@ -423,21 +439,21 @@
       <window_info anchor="right" id="Database" order="3" />
     </layout>
     <layout-to-restore>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49895614" visible="true" weight="0.13360325" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49895614" visible="true" weight="0.15222672" />
       <window_info id="Structure" order="1" sideWeight="0.50104386" side_tool="true" weight="0.22753036" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3285968" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49959514" visible="true" weight="0.47602132" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.26465365" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49959514" visible="true" weight="0.053285968" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.589698" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Database Changes" order="7" />
-      <window_info anchor="bottom" id="Messages" order="8" sideWeight="0.49959514" weight="0.4920071" />
+      <window_info anchor="bottom" id="Messages" order="8" sideWeight="0.49959514" weight="0.38365898" />
       <window_info anchor="bottom" id="Terminal" order="9" weight="0.14209591" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50040483" side_tool="true" weight="0.4884547" />
-      <window_info anchor="bottom" id="Version Control" order="11" sideWeight="0.49959514" weight="0.053285968" />
+      <window_info anchor="bottom" id="Version Control" order="11" sideWeight="0.49959514" weight="0.19182949" />
       <window_info anchor="bottom" id="CMake" order="12" weight="0.26998225" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -459,10 +475,6 @@
     </option>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/play.cpp" />
-    <entry file="file://$PROJECT_DIR$/play.h" />
-    <entry file="file://$PROJECT_DIR$/Game.h" />
-    <entry file="file://$PROJECT_DIR$/Game.cpp" />
     <entry file="file://$PROJECT_DIR$/../sfmltest/main.cpp">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -534,13 +546,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/SFML-2.5.1/include/SFML/Window/Mouse.hpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="79" column="16" selection-start-line="79" selection-start-column="16" selection-end-line="79" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/GameManager.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
@@ -558,32 +563,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/MSSFMLview.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-106">
-          <caret line="22" column="12" lean-forward="true" selection-start-line="22" selection-start-column="12" selection-end-line="22" selection-end-column="12" />
-          <folding>
-            <element signature="e#43#71#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/MSTextController.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="459">
           <caret line="27" column="87" selection-start-line="27" selection-start-column="87" selection-end-line="27" selection-end-column="87" />
           <folding>
             <element signature="e#42#61#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MSSFMLview.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="53" column="43" lean-forward="true" selection-start-line="53" selection-start-column="43" selection-end-line="53" selection-end-column="43" />
-          <folding>
-            <element signature="e#43#66#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -622,23 +607,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ScoreView.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="935">
-          <caret line="55" column="4" selection-start-line="55" selection-start-column="4" selection-end-line="55" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ScoreView.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="12" selection-start-line="13" selection-start-column="4" selection-end-line="20" selection-end-column="23" />
-          <folding>
-            <element signature="e#41#69#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/MinesweeperView.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
@@ -659,32 +627,98 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/MinesweeperController.h">
+    <entry file="file://$PROJECT_DIR$/Minesweeperboard.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="348">
-          <caret line="27" column="66" selection-start-line="27" selection-start-column="66" selection-end-line="27" selection-end-column="66" />
-          <folding>
-            <element signature="e#65#93#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="481">
+          <caret line="53" column="19" selection-start-line="53" selection-start-column="19" selection-end-line="53" selection-end-column="19" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/MinesweeperController.cpp">
+    <entry file="file://$PROJECT_DIR$/Minesweeperboard.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="21" column="9" lean-forward="true" selection-start-line="21" selection-start-column="9" selection-end-line="21" selection-end-column="9" />
+        <state relative-caret-position="382">
+          <caret line="175" column="25" selection-start-line="175" selection-start-column="25" selection-end-line="175" selection-end-column="25" />
           <folding>
-            <element signature="e#0#34#0" expanded="true" />
+            <element signature="e#44#73#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/IntroController.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="544">
+        <state relative-caret-position="451">
           <caret line="32" column="69" selection-start-line="32" selection-start-column="69" selection-end-line="32" selection-end-column="69" />
           <folding>
             <element signature="e#53#81#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MSSFMLview.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="169">
+          <caret line="12" column="8" selection-start-line="12" selection-start-column="8" selection-end-line="12" selection-end-column="8" />
+          <folding>
+            <element signature="e#43#71#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Desktop/Saper/MinesweeperController.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="17" column="60" lean-forward="true" selection-start-line="16" selection-start-column="8" selection-end-line="17" selection-end-column="60" />
+          <folding>
+            <element signature="e#0#34#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Desktop/Saper/GameManager.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="28" column="89" lean-forward="true" selection-start-line="27" selection-start-column="8" selection-end-line="28" selection-end-column="89" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Desktop/Saper/MSSFMLview.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-561" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="99">
+          <caret line="34" column="26" selection-start-line="34" selection-start-column="26" selection-end-line="34" selection-end-column="26" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GameManager.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="26" column="1" selection-start-line="26" selection-start-column="1" selection-end-line="26" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MinesweeperController.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="493">
+          <caret line="29" column="44" selection-start-line="29" selection-start-column="44" selection-end-line="29" selection-end-column="44" />
+          <folding>
+            <element signature="e#65#93#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MSSFMLview.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="867">
+          <caret line="51" column="48" selection-start-line="51" selection-start-column="48" selection-end-line="51" selection-end-column="48" />
+          <folding>
+            <element signature="e#43#66#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -701,52 +735,59 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/ScoreController.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="155" selection-start-line="16" selection-start-column="155" selection-end-line="16" selection-end-column="155" />
+        <state relative-caret-position="221">
+          <caret line="13" column="49" selection-start-line="13" selection-start-column="49" selection-end-line="13" selection-end-column="49" />
           <folding>
             <element signature="e#53#81#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/main.cpp">
+    <entry file="file://$PROJECT_DIR$/MinesweeperController.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-73">
-          <caret line="46" column="37" selection-start-line="46" selection-start-column="37" selection-end-line="46" selection-end-column="37" />
+        <state relative-caret-position="501">
+          <caret line="41" column="33" selection-start-line="41" selection-start-column="33" selection-end-line="41" selection-end-column="33" />
           <folding>
-            <element signature="e#0#28#0" expanded="true" />
+            <element signature="e#0#34#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/SFML-2.5.1/include/SFML/Graphics/RenderTarget.hpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="169">
+          <caret line="149" column="13" selection-start-line="149" selection-start-column="13" selection-end-line="149" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/SFML-2.5.1/include/SFML/Window/Mouse.hpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="169">
+          <caret line="42" column="22" selection-start-line="42" selection-start-column="22" selection-end-line="42" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ScoreView.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="451">
+          <caret line="63" column="4" selection-start-line="63" selection-start-column="4" selection-end-line="63" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ScoreView.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="213">
+          <caret line="18" column="29" lean-forward="true" selection-start-line="18" selection-start-column="29" selection-end-line="18" selection-end-column="29" />
+          <folding>
+            <element signature="e#41#69#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ScoreController.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="66" lean-forward="true" selection-start-line="16" selection-start-column="66" selection-end-line="16" selection-end-column="66" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Minesweeperboard.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="298">
-          <caret line="53" column="19" selection-start-line="53" selection-start-column="19" selection-end-line="53" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/GameManager.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-76">
-          <caret line="20" column="30" selection-start-line="20" selection-start-column="30" selection-end-line="20" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Minesweeperboard.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2814">
-          <caret line="175" column="25" selection-start-line="175" selection-start-column="25" selection-end-line="175" selection-end-column="25" />
-          <folding>
-            <element signature="e#44#73#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="187">
+          <caret line="11" column="23" selection-start-line="11" selection-start-column="23" selection-end-line="11" selection-end-column="23" />
         </state>
       </provider>
     </entry>
