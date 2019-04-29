@@ -83,7 +83,7 @@ IntroView::IntroView(sf::RenderWindow &window): window(window) {
     album.setCharacterSize(20);
 
     grupa.setFont(font);
-    grupa.setString("Wtorek 15:15");
+    grupa.setString("Wtorek 13:15");
     grupa.setPosition(700, 750);
     grupa.setFillColor(sf::Color::Red);
     grupa.setCharacterSize(20);

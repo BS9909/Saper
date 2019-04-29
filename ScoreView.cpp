@@ -7,7 +7,7 @@ ScoreView::ScoreView(sf::RenderWindow &renderWindow,MSSFMLview &mssfmLview):
     if (!font.loadFromFile("arial.ttf")) {
         abort();
     }
-    text.setPosition(0,700);
+    text.setPosition(100,700-150);
     text.setFont(font);
     text.setFillColor(sf::Color::Blue);
     text.setCharacterSize(100);
@@ -21,23 +21,23 @@ ScoreView::ScoreView(sf::RenderWindow &renderWindow,MSSFMLview &mssfmLview):
     revealAmountText.setOutlineColor(sf::Color::Blue);
     revealAmountText.setPosition(0,0);
 
-    play_again.setPosition(430, 700);
+    play_again.setPosition(430+100, 700-150);
     play_again.setFillColor(sf::Color::Green);
     play_again.setSize(sf::Vector2f(100,100));
     textPlay.setFont(font);
     textPlay.setString("Play Again");
-    textPlay.setCharacterSize(15);
+    textPlay.setCharacterSize(20);
     textPlay.setFillColor(sf::Color::Black);
-    textPlay.setPosition(450,720);
+    textPlay.setPosition(450+83,720-130);
 
-    close.setPosition(550,700);
+    close.setPosition(550+100,700-150);
     close.setFillColor(sf::Color::Red);
     close.setSize(sf::Vector2f(100,100));
     textClose.setFont(font);
     textClose.setString("Close");
-    textClose.setCharacterSize(15);
+    textClose.setCharacterSize(20);
     textClose.setFillColor(sf::Color::Black);
-    textClose.setPosition(570,720);
+    textClose.setPosition(570+105,720-130);
 
 }
 

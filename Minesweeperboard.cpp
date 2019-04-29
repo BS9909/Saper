@@ -29,7 +29,7 @@ void Minesweeperboard::setNewParameters(int width, int high, GameMode gameMode) 
     debug_display();
 }
 void Minesweeperboard::setMines() {
-
+    firstMove = true;
     for (int i = 0; i < high; i++) {//row = i
         for (int j = 0; j < width; j++) {//column = j
             board[i][j].hasMine = false;
